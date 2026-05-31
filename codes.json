@@ -1,0 +1,968 @@
+{
+ "generated_at": "2026-05-30T23:24:20-04:00",
+ "codes": [
+  {
+   "code": "AA",
+   "name": "Agaricia agaricites",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "AC",
+   "name": "Acropora cervicornis",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "AF",
+   "name": "Agaricia fragilis",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "AG",
+   "name": "Agaricia grahamae",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "AGSP",
+   "name": "Agaricia spp.",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "AH",
+   "name": "Agaricia humilis",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "AL",
+   "name": "Agaricia lamarcki",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "AMPH",
+   "name": "Amphiroa spp.",
+   "category": "Macroalgae",
+   "group": "Algae"
+  },
+  {
+   "code": "ANEM",
+   "name": "Anemone",
+   "category": "Other, Living",
+   "group": "Other living"
+  },
+  {
+   "code": "AP",
+   "name": "Acropora palmata",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "APR",
+   "name": "Acropora prolifera",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "AT",
+   "name": "Agaricia tenuifolia",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "AU",
+   "name": "Agaricia undata",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "B",
+   "name": "Boulder",
+   "category": "Non-living",
+   "group": "Non-living"
+  },
+  {
+   "code": "BALL",
+   "name": "Ball sponge",
+   "category": "Sponge",
+   "group": "Other living"
+  },
+  {
+   "code": "BASP",
+   "name": "Barrel/Vase sponge",
+   "category": "Sponge",
+   "group": "Other living"
+  },
+  {
+   "code": "BBD",
+   "name": "Black band disease",
+   "category": "Coral Condition",
+   "group": "Coral condition"
+  },
+  {
+   "code": "BL",
+   "name": "Bleached coral",
+   "category": "Coral Condition",
+   "group": "Coral condition"
+  },
+  {
+   "code": "BOSP",
+   "name": "Boring sponge",
+   "category": "Sponge",
+   "group": "Other living"
+  },
+  {
+   "code": "BRIA",
+   "name": "Briareum asbestinum",
+   "category": "Gorgonian",
+   "group": "Other living"
+  },
+  {
+   "code": "CALG",
+   "name": "Crustose coralline algae",
+   "category": "Calcareous",
+   "group": "Algae"
+  },
+  {
+   "code": "CLAD",
+   "name": "Cladophora spp.",
+   "category": "Macroalgae",
+   "group": "Algae"
+  },
+  {
+   "code": "CLIO",
+   "name": "Clionia delitrix",
+   "category": "Sponge",
+   "group": "Other living"
+  },
+  {
+   "code": "CLSP",
+   "name": "Cliona spp.",
+   "category": "Sponge",
+   "group": "Other living"
+  },
+  {
+   "code": "CMOR",
+   "name": "Corallimorpharians",
+   "category": "Other, Living",
+   "group": "Other living"
+  },
+  {
+   "code": "CN",
+   "name": "Colpophyllia natans",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "CORAL",
+   "name": "Coral spp.",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "CORJU",
+   "name": "Juvenile coral spp.",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "DC",
+   "name": "Diploria clivosa",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "DCA",
+   "name": "Dead coral w/ turf algae",
+   "category": "Dca",
+   "group": "Non-living"
+  },
+  {
+   "code": "DCOR",
+   "name": "Diseased coral",
+   "category": "Coral Condition",
+   "group": "Coral condition"
+  },
+  {
+   "code": "DCY",
+   "name": "Dendrogyra cylindrus",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "DICT",
+   "name": "Dictyota spp.",
+   "category": "Macroalgae",
+   "group": "Algae"
+  },
+  {
+   "code": "DL",
+   "name": "Diploria labyrinthiformis",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "DS",
+   "name": "Diploria strigosa",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "DSD",
+   "name": "Dark spot disease",
+   "category": "Coral Condition",
+   "group": "Coral condition"
+  },
+  {
+   "code": "DSO",
+   "name": "Dichocoenia stokesii",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "EAC",
+   "name": "Epilithic algae community",
+   "category": "Turf",
+   "group": "Algae"
+  },
+  {
+   "code": "EF",
+   "name": "Eusmilia fastigiata",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "ENGO",
+   "name": "Encrusting Gorgonian",
+   "category": "Gorgonian",
+   "group": "Other living"
+  },
+  {
+   "code": "ENSP",
+   "name": "Encrusting sponge",
+   "category": "Sponge",
+   "group": "Other living"
+  },
+  {
+   "code": "ERSP",
+   "name": "Erect Sponge",
+   "category": "Spo",
+   "group": "Other living"
+  },
+  {
+   "code": "ERYTH",
+   "name": "Erythropodium caribaeorum",
+   "category": "Gorgonian",
+   "group": "Other living"
+  },
+  {
+   "code": "FAN",
+   "name": "Sea fan",
+   "category": "Gorgonian",
+   "group": "Other living"
+  },
+  {
+   "code": "FF",
+   "name": "Favia fragum",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "FLCY",
+   "name": "Filamentous cyanobacteria",
+   "category": "Cyanobacteria",
+   "group": "Algae"
+  },
+  {
+   "code": "GO",
+   "name": "Gorgonian",
+   "category": "Gorgonian",
+   "group": "Other living"
+  },
+  {
+   "code": "HALI",
+   "name": "Halimeda spp.",
+   "category": "Macroalgae",
+   "group": "Algae"
+  },
+  {
+   "code": "HC",
+   "name": "Helioseris cucullata",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "IR",
+   "name": "Isopyhyllastrea rigida",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "IS",
+   "name": "Isophyllia sinuosa",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "LC",
+   "name": "Leptoseris cucullata",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "LIAG",
+   "name": "Liagora spp.",
+   "category": "Macroalgae",
+   "group": "Algae"
+  },
+  {
+   "code": "LOBO",
+   "name": "Lobophora spp.",
+   "category": "Macroalgae",
+   "group": "Algae"
+  },
+  {
+   "code": "LYNG",
+   "name": "Lyngbia spp.",
+   "category": "Cyanobacteria",
+   "group": "Algae"
+  },
+  {
+   "code": "MA",
+   "name": "Montastraea annularis",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MACA",
+   "name": "Macroalgae",
+   "category": "Macroalgae",
+   "group": "Algae"
+  },
+  {
+   "code": "MACX",
+   "name": "Montastraea annularis complex",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MAFO",
+   "name": "Madracis formosa",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MAL",
+   "name": "Mycetophyllia aliciae",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MAN",
+   "name": "Mussa angulosa",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MAR",
+   "name": "Manicina areolata",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MC",
+   "name": "Montastraea cavernosa",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MD",
+   "name": "Madracis decactis",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MDA",
+   "name": "Mycetophyllia daniana",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MF",
+   "name": "Mycetophyllia ferox",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MFAV",
+   "name": "Montastraea faveolata",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MFRA",
+   "name": "Montastraea franksi",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MICRO",
+   "name": "Microdictyon spp.",
+   "category": "Macroalgae",
+   "group": "Algae"
+  },
+  {
+   "code": "MILA",
+   "name": "Millepora alcicornis",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MILC",
+   "name": "Millepora complanata",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MILS",
+   "name": "Millepora squarrosa",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "ML",
+   "name": "Mycetophyllia lamarckiana",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MM",
+   "name": "Madracis mirabilis",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MME",
+   "name": "Meandrina meandrites",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MSPP",
+   "name": "Montastraea spp.",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "MYSP",
+   "name": "Mycetophyllia spp.",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "O",
+   "name": "Other",
+   "category": "Other, Living",
+   "group": "Other living"
+  },
+  {
+   "code": "OA",
+   "name": "Orbicella annularis",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "OD",
+   "name": "Oculina diffusa",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "OFAV",
+   "name": "Orbicella faveolata",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "OFRA",
+   "name": "Orbicella franksii",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "OX",
+   "name": "Orbicella species complex",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "P",
+   "name": "Pavement",
+   "category": "Non-living",
+   "group": "Non-living"
+  },
+  {
+   "code": "PA",
+   "name": "Porites astreoides",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "PALY",
+   "name": "Palythoa caribaeorum",
+   "category": "Zoanthid",
+   "group": "Other living"
+  },
+  {
+   "code": "PB",
+   "name": "Porites branneri",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "PBSP",
+   "name": "Branching Porites spp.",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "PC",
+   "name": "Porites colonensis",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "PCL",
+   "name": "Pseudodiploria clivosa",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "PD",
+   "name": "Porites divaricata",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "PEY",
+   "name": "Peyssonellia spp.",
+   "category": "Macroalgae",
+   "group": "Algae"
+  },
+  {
+   "code": "PF",
+   "name": "Porites furcata",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "PLA",
+   "name": "White plague",
+   "category": "Coral Condition",
+   "group": "Coral condition"
+  },
+  {
+   "code": "PLUME",
+   "name": "Sea plume",
+   "category": "Gorgonian",
+   "group": "Other living"
+  },
+  {
+   "code": "PP",
+   "name": "Porites porites",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "PS",
+   "name": "Pseudodiploria strigosa",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "R",
+   "name": "Rubble",
+   "category": "Non-living",
+   "group": "Non-living"
+  },
+  {
+   "code": "RAMI",
+   "name": "Ramicrusta spp.",
+   "category": "Macroalgae",
+   "group": "Algae"
+  },
+  {
+   "code": "RO",
+   "name": "Rhodolith",
+   "category": "Calcareous",
+   "group": "Algae"
+  },
+  {
+   "code": "ROD",
+   "name": "Sea rod",
+   "category": "Gorgonian",
+   "group": "Other living"
+  },
+  {
+   "code": "ROPE",
+   "name": "Rope sponge",
+   "category": "Sponge",
+   "group": "Other living"
+  },
+  {
+   "code": "S",
+   "name": "Sand",
+   "category": "Non-living",
+   "group": "Non-living"
+  },
+  {
+   "code": "SARG",
+   "name": "Sargassum spp.",
+   "category": "Macroalgae",
+   "group": "Algae"
+  },
+  {
+   "code": "SB",
+   "name": "Solenastrea bournoni",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "SC",
+   "name": "Scolymia cubensis",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "SCHIZ",
+   "name": "Schizothrix spp.",
+   "category": "Cyanobacteria",
+   "group": "Algae"
+  },
+  {
+   "code": "SCSP",
+   "name": "Scolymia spp.",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "SCTLD",
+   "name": "Stony coral tissue loss disease",
+   "category": "Coral Condition",
+   "group": "Coral condition"
+  },
+  {
+   "code": "SH",
+   "name": "Solenastrea hyades",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "SHADOW",
+   "name": "Shadow",
+   "category": "Other",
+   "group": "Other / markers"
+  },
+  {
+   "code": "SI",
+   "name": "Stephanocoenia intercepta",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "SL",
+   "name": "Scolymia lacera",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "SM",
+   "name": "Stephanocoenia michelinii",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "SPO",
+   "name": "Sponge",
+   "category": "Sponge",
+   "group": "Other living"
+  },
+  {
+   "code": "SR",
+   "name": "Siderastrea radians",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "SS",
+   "name": "Siderastrea siderea",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "SSPP",
+   "name": "Siderastrea spp.",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "TA",
+   "name": "Tubastraea aurea",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "TAPE",
+   "name": "Transect tape",
+   "category": "Other",
+   "group": "Other / markers"
+  },
+  {
+   "code": "TC",
+   "name": "Tubastraea coccinea",
+   "category": "Coral",
+   "group": "Coral"
+  },
+  {
+   "code": "TUBE",
+   "name": "Tube sponge",
+   "category": "Sponge",
+   "group": "Other living"
+  },
+  {
+   "code": "TWS",
+   "name": "Transect tape, weighted line, or shadow",
+   "category": "Non-living",
+   "group": "Non-living"
+  },
+  {
+   "code": "UNK",
+   "name": "Unknown",
+   "category": "Non-living",
+   "group": "Non-living"
+  },
+  {
+   "code": "WAND",
+   "name": "Weighted line",
+   "category": "Other",
+   "group": "Other / markers"
+  },
+  {
+   "code": "WBD",
+   "name": "White band disease",
+   "category": "Coral Condition",
+   "group": "Coral condition"
+  },
+  {
+   "code": "WHIP",
+   "name": "Sea whip",
+   "category": "Gorgonian",
+   "group": "Other living"
+  },
+  {
+   "code": "YBD",
+   "name": "Yellow band disease",
+   "category": "Coral Condition",
+   "group": "Coral condition"
+  },
+  {
+   "code": "ZO",
+   "name": "Zoanthids",
+   "category": "Zoanthid",
+   "group": "Other living"
+  },
+  {
+   "code": "ZOSO",
+   "name": "Zoanthus sociatus",
+   "category": "Zoanthid",
+   "group": "Other living"
+  }
+ ],
+ "groups": [
+  {
+   "group": "Coral",
+   "codes": [
+    "AC",
+    "AP",
+    "APR",
+    "AA",
+    "AF",
+    "AG",
+    "AH",
+    "AL",
+    "AGSP",
+    "AT",
+    "AU",
+    "PBSP",
+    "CN",
+    "CORAL",
+    "DCY",
+    "DSO",
+    "DC",
+    "DL",
+    "DS",
+    "EF",
+    "FF",
+    "HC",
+    "IS",
+    "IR",
+    "CORJU",
+    "LC",
+    "MD",
+    "MAFO",
+    "MM",
+    "MAR",
+    "MME",
+    "MILA",
+    "MILC",
+    "MILS",
+    "MA",
+    "MACX",
+    "MC",
+    "MFAV",
+    "MFRA",
+    "MSPP",
+    "MAN",
+    "MAL",
+    "MDA",
+    "MF",
+    "ML",
+    "MYSP",
+    "OD",
+    "OA",
+    "OFAV",
+    "OFRA",
+    "OX",
+    "PA",
+    "PB",
+    "PC",
+    "PD",
+    "PF",
+    "PP",
+    "PCL",
+    "PS",
+    "SC",
+    "SL",
+    "SCSP",
+    "SR",
+    "SS",
+    "SSPP",
+    "SB",
+    "SH",
+    "SI",
+    "SM",
+    "TA",
+    "TC"
+   ]
+  },
+  {
+   "group": "Coral condition",
+   "codes": [
+    "BBD",
+    "BL",
+    "DSD",
+    "DCOR",
+    "SCTLD",
+    "WBD",
+    "PLA",
+    "YBD"
+   ]
+  },
+  {
+   "group": "Algae",
+   "codes": [
+    "AMPH",
+    "CLAD",
+    "CALG",
+    "DICT",
+    "EAC",
+    "FLCY",
+    "HALI",
+    "LIAG",
+    "LOBO",
+    "LYNG",
+    "MACA",
+    "MICRO",
+    "PEY",
+    "RAMI",
+    "RO",
+    "SARG",
+    "SCHIZ"
+   ]
+  },
+  {
+   "group": "Other living",
+   "codes": [
+    "ANEM",
+    "BALL",
+    "BASP",
+    "BOSP",
+    "BRIA",
+    "CLSP",
+    "CLIO",
+    "CMOR",
+    "ENGO",
+    "ENSP",
+    "ERSP",
+    "ERYTH",
+    "GO",
+    "O",
+    "PALY",
+    "ROPE",
+    "FAN",
+    "PLUME",
+    "ROD",
+    "WHIP",
+    "SPO",
+    "TUBE",
+    "ZO",
+    "ZOSO"
+   ]
+  },
+  {
+   "group": "Non-living",
+   "codes": [
+    "B",
+    "DCA",
+    "P",
+    "R",
+    "S",
+    "TWS",
+    "UNK"
+   ]
+  },
+  {
+   "group": "Other / markers",
+   "codes": [
+    "SHADOW",
+    "TAPE",
+    "WAND"
+   ]
+  }
+ ],
+ "confidence": {
+  "high": {
+   "value": "high",
+   "label": "High confidence",
+   "definition": "Confident in this identification to the stated taxonomic level \u2014 diagnostic features are clearly visible."
+  },
+  "low": {
+   "value": "low",
+   "label": "Low confidence",
+   "definition": "Best guess only \u2014 the ID is uncertain (poor image quality, ambiguous or partial view, or look-alike taxa)."
+  }
+ },
+ "default_confidence": "high",
+ "idk": {
+  "code": "IDK",
+  "label": "I don't know"
+ },
+ "something_else": {
+  "code": "OTHER_PICK",
+  "label": "Something else"
+ }
+}

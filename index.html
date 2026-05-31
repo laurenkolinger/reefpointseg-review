@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TCRMP Coral — Expert Review</title>
+<link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="title">
+    <h1>TCRMP Coral &mdash; Expert Review</h1>
+    <p class="sub">Identify each segmented coral/benthic mask below. Your IDs help train an automated
+       reef-monitoring model. Thank you for your time.</p>
+  </div>
+  <div class="counts" id="counts" aria-live="polite"></div>
+</header>
+
+<section class="instructions" id="instructions">
+  <details open>
+    <summary>How to review (please read)</summary>
+    <ol>
+      <li>Enter your <strong>name or email</strong> below so we know who provided each ID.</li>
+      <li>For each card: look at the <strong>close-up</strong> (drag the opacity slider to see the mask
+          fill; the cyan outline and amber box mark the segmented organism). Click
+          <em>Show whole frame</em> for context.</li>
+      <li>Pick the matching <strong>code</strong>. If it is one of the highlighted target species, just
+          click it. Otherwise choose <strong>Something else</strong> and find it by group. If you cannot
+          tell, leave <strong>&ldquo;I don&rsquo;t know&rdquo;</strong> selected or click <strong>Skip</strong>.</li>
+      <li>Set <strong>confidence</strong> (defaults to High).</li>
+      <li>When done (or after any number of cards), click <strong>Export CSV</strong> at the bottom and
+          <strong>email the downloaded file</strong> to the addresses shown. Your progress is saved in
+          this browser, so you can come back later.</li>
+    </ol>
+  </details>
+  <div class="reviewer">
+    <label for="reviewer">Your name or email
+      <span class="tip" title="Recorded as the labeler for every ID you submit, so we can follow up on questions.">?</span>
+    </label>
+    <input type="text" id="reviewer" placeholder="e.g. jane.doe@uni.edu" autocomplete="email">
+  </div>
+</section>
+
+<main id="cards" class="cards"></main>
+
+<footer class="actionbar">
+  <div class="progress" id="progress"></div>
+  <button id="exportBtn" class="primary">Export CSV</button>
+</footer>
+
+<div class="modal" id="exportModal" hidden>
+  <div class="modal-card">
+    <h2>Email your results</h2>
+    <p>Your CSV (<code id="csvName">expert_ids.csv</code>) has downloaded. Please <strong>attach it to an
+       email</strong> and send it to:</p>
+    <ul id="contactList" class="contacts"></ul>
+    <p class="hint">A blank email to these recipients has been opened for you &mdash; just attach the
+       downloaded CSV. (Browsers cannot attach the file automatically.)</p>
+    <div class="modal-actions">
+      <a id="mailtoLink" class="primary" href="#">Open email</a>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="viewer.js"></script>
+</body>
+</html>
