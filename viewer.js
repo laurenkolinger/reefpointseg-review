@@ -5,8 +5,7 @@
   "use strict";
 
   var LS_ANS = "tcrmp_review_answers_v1";   // {uid:{code,conf,skipped,answered}}
-  var LS_REV = "tcrmp_review_reviewer_v1";   // reviewer name/email
-  var FILL = "#00c8dc";
+  var FILL = "#22d3ee";                      // mask highlight (matches the baked outline)
   var DEFAULT_OPACITY = 0.45;
 
   var CODES = null, MANIFEST = null, BYCODE = {};
@@ -135,6 +134,7 @@
     elseOpt.appendChild(el("span", "code", CODES.something_else.label));
     elseOpt.title = "Pick any other code from the full list, grouped by category.";
     opts.appendChild(elseOpt);
+    form.appendChild(el("div", "lbl", "Identification"));
     form.appendChild(opts);
 
     // nested "something else" picker
@@ -171,7 +171,7 @@
     lo.title = CODES.confidence.low.definition;
     hi.addEventListener("click", function () { a.conf = "high"; a.answered = true; syncUI(); persist(); });
     lo.addEventListener("click", function () { a.conf = "low"; a.answered = true; syncUI(); persist(); });
-    conf.appendChild(el("span", null, "confidence:")); conf.appendChild(hi); conf.appendChild(lo);
+    conf.appendChild(el("span", "lbl", "Confidence")); conf.appendChild(hi); conf.appendChild(lo);
     row.appendChild(conf);
     var skip = el("button", "skipbtn", "Skip");
     skip.title = "Not sure — exclude this mask from your results.";
@@ -224,13 +224,11 @@
 
   // ── CSV export ────────────────────────────────────────────────────
   function exportCSV() {
-    var reviewer = (document.getElementById("reviewer").value || "").trim();
-    save(LS_REV, reviewer);
-    var rows = [["uid", "code", "confidence", "labeler", "mode"]];
+    var rows = [["uid", "code", "confidence"]];
     MANIFEST.items.forEach(function (it) {
       var a = answers[it.uid];
       if (!a || a.skipped || !a.answered) return;   // only submitted IDs
-      rows.push([it.uid, a.code, a.conf, reviewer, "EXPERT"]);
+      rows.push([it.uid, a.code, a.conf]);
     });
     if (rows.length === 1) {
       alert("No IDs to export yet. Pick a code on at least one card (Skip and "
@@ -243,7 +241,7 @@
         return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
       }).join(",");
     }).join("\n");
-    var name = "expert_ids_" + (reviewer.replace(/[^A-Za-z0-9]+/g, "_") || "review") + ".csv";
+    var name = "tcrmp_expert_ids.csv";
     var blob = new Blob([csv], { type: "text/csv" });
     var url = URL.createObjectURL(blob);
     var a = document.createElement("a"); a.href = url; a.download = name; a.click();
@@ -267,7 +265,6 @@
 
   // ── boot ──────────────────────────────────────────────────────────
   function boot() {
-    var rev = load(LS_REV); if (rev) document.getElementById("reviewer").value = rev;
     document.getElementById("exportBtn").addEventListener("click", exportCSV);
     document.getElementById("closeModal").addEventListener("click", function () {
       document.getElementById("exportModal").hidden = true;

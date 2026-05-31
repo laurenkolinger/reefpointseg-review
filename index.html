@@ -3,15 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TCRMP Coral — Expert Review</title>
+<title>TCRMP Reef — Expert Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="viewer.css">
 </head>
 <body>
 <header class="topbar">
   <div class="title">
-    <h1>TCRMP Coral &mdash; Expert Review</h1>
-    <p class="sub">Identify each segmented coral/benthic mask below. Your IDs help train an automated
-       reef-monitoring model. Thank you for your time.</p>
+    <h1>TCRMP Reef &mdash; Expert Review</h1>
+    <p class="sub">Identify each segmented benthic organism below (coral, algae, sponge, gorgonian,
+       substrate &mdash; whatever it is). Your IDs help train an automated reef-monitoring model.
+       Thank you for your time.</p>
   </div>
   <div class="counts" id="counts" aria-live="polite"></div>
 </header>
@@ -20,25 +24,19 @@
   <details open>
     <summary>How to review (please read)</summary>
     <ol>
-      <li>Enter your <strong>name or email</strong> below so we know who provided each ID.</li>
-      <li>For each card: look at the <strong>close-up</strong> (drag the opacity slider to see the mask
-          fill; the cyan outline and amber box mark the segmented organism). Click
-          <em>Show whole frame</em> for context.</li>
-      <li>Pick the matching <strong>code</strong>. If it is one of the highlighted target species, just
-          click it. Otherwise choose <strong>Something else</strong> and find it by group. If you cannot
-          tell, leave <strong>&ldquo;I don&rsquo;t know&rdquo;</strong> selected or click <strong>Skip</strong>.</li>
+      <li>For each card, look at the <strong>close-up</strong> (drag the opacity slider to reveal the mask
+          fill; the cyan outline and box mark the segmented organism). Click <em>Show whole frame</em> for
+          context.</li>
+      <li>Pick the matching <strong>code</strong>. If it is one of the highlighted choices, just click it.
+          Otherwise choose <strong>Something else</strong> and find it by group (coral, algae, sponge,
+          gorgonian, substrate, and more). If you cannot tell, leave <strong>&ldquo;I don&rsquo;t
+          know&rdquo;</strong> selected or click <strong>Skip</strong>.</li>
       <li>Set <strong>confidence</strong> (defaults to High).</li>
       <li>When done (or after any number of cards), click <strong>Export CSV</strong> at the bottom and
-          <strong>email the downloaded file</strong> to the addresses shown. Your progress is saved in
-          this browser, so you can come back later.</li>
+          <strong>email the downloaded file</strong> to the address(es) shown. Your progress is saved in
+          this browser, so you can stop and come back later.</li>
     </ol>
   </details>
-  <div class="reviewer">
-    <label for="reviewer">Your name or email
-      <span class="tip" title="Recorded as the labeler for every ID you submit, so we can follow up on questions.">?</span>
-    </label>
-    <input type="text" id="reviewer" placeholder="e.g. jane.doe@uni.edu" autocomplete="email">
-  </div>
 </section>
 
 <main id="cards" class="cards"></main>
