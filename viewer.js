@@ -92,8 +92,10 @@
     cropImg.onload = function () { loaded.crop = true; redraw(); };
     maskImg.onload = function () { loaded.mask = true; redraw(); };
     cropImg.onerror = function () { wrap.appendChild(el("div", "empty", "image unavailable")); };
+    maskImg.onerror = function () { slider.disabled = true; slider.title = "No mask overlay for this item"; };
     if (item.crop) cropImg.src = item.crop;
-    if (item.mask) maskImg.src = item.mask;
+    if (item.mask) { maskImg.src = item.mask; }
+    else { slider.disabled = true; slider.title = "No mask overlay for this item"; }
     slider.addEventListener("input", redraw);
     fullBtn.addEventListener("click", function () {
       var showing = fullImg.style.display !== "none";
@@ -253,13 +255,20 @@
     var contacts = (MANIFEST.contacts || []).filter(Boolean);
     document.getElementById("csvName").textContent = csvName;
     var list = document.getElementById("contactList"); list.innerHTML = "";
-    contacts.forEach(function (c) { list.appendChild(el("li", null, c)); });
-    var subject = encodeURIComponent("TCRMP coral expert IDs — " + n + " labels");
+    var link = document.getElementById("mailtoLink");
+    var subject = encodeURIComponent("TCRMP reef expert IDs — " + n + " labels");
     var body = encodeURIComponent(
       "Hi,\n\nAttached is my expert ID CSV (" + csvName + ") with " + n +
-      " identifications from the TCRMP coral review.\n\n(Please remember to attach the downloaded file.)\n");
-    document.getElementById("mailtoLink").href =
-      "mailto:" + contacts.join(",") + "?subject=" + subject + "&body=" + body;
+      " identifications from the TCRMP reef review.\n\n(Please remember to attach the downloaded file.)\n");
+    if (contacts.length) {
+      contacts.forEach(function (c) { list.appendChild(el("li", null, c)); });
+      link.href = "mailto:" + contacts.join(",") + "?subject=" + subject + "&body=" + body;
+      link.style.display = "";
+    } else {
+      list.appendChild(el("li", null,
+        "(no recipient was configured — please send the CSV to whoever asked you to review)"));
+      link.style.display = "none";
+    }
     document.getElementById("exportModal").hidden = false;
   }
 
@@ -270,24 +279,30 @@
       document.getElementById("exportModal").hidden = true;
     });
 
-    Promise.all([getJSON("codes.json"), getJSON("review_manifest.json")])
-      .then(function (res) {
-        CODES = res[0]; MANIFEST = res[1];
-        (CODES.codes || []).forEach(function (c) { BYCODE[c.code] = c; });
-        var host = document.getElementById("cards");
-        host.innerHTML = "";
-        if (!MANIFEST.items || !MANIFEST.items.length) {
-          host.appendChild(el("div", "empty",
-            "Nothing to review right now — all masks have been identified. Thank you!"));
-          refreshCounts(); return;
-        }
-        MANIFEST.items.forEach(function (it) { host.appendChild(buildCard(it)); });
-        refreshCounts();
-      })
-      .catch(function (e) {
-        document.getElementById("cards").appendChild(
-          el("div", "empty", "Could not load review data: " + e.message));
+    // codes.json is required (the labeling form needs it). The manifest may be
+    // missing/404 (e.g. a freshly-deployed empty review repo) — treat that as
+    // "nothing to review" rather than a hard error.
+    getJSON("codes.json").then(function (codesData) {
+      CODES = codesData;
+      (CODES.codes || []).forEach(function (c) { BYCODE[c.code] = c; });
+      return getJSON("review_manifest.json").catch(function () {
+        return { contacts: [], items: [] };
       });
+    }).then(function (manifest) {
+      MANIFEST = manifest || { contacts: [], items: [] };
+      var host = document.getElementById("cards");
+      host.innerHTML = "";
+      if (!MANIFEST.items || !MANIFEST.items.length) {
+        host.appendChild(el("div", "empty",
+          "Nothing to review right now — all masks have been identified. Thank you!"));
+        refreshCounts(); return;
+      }
+      MANIFEST.items.forEach(function (it) { host.appendChild(buildCard(it)); });
+      refreshCounts();
+    }).catch(function (e) {
+      document.getElementById("cards").appendChild(
+        el("div", "empty", "Could not load review data: " + e.message));
+    });
   }
   if (document.readyState === "loading")
     document.addEventListener("DOMContentLoaded", boot);
