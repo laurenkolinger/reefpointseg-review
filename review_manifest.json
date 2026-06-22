@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-06-22T15:56:36-04:00",
+ "generated_at": "2026-06-22T16:05:05-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 35,
+ "count": 39,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -816,6 +816,106 @@
    "crop": "items/FLC-20250327-T608-x1856y959-a1522b99/crop.jpg",
    "mask": "items/FLC-20250327-T608-x1856y959-a1522b99/mask.png",
    "full": "items/FLC-20250327-T608-x1856y959-a1522b99/full.jpg"
+  },
+  {
+   "uid": "CKR-20171202-T114-x933y653-6a680953",
+   "site": "CKR",
+   "site_full": "Coculus Rock",
+   "year": 2017,
+   "transect": 1,
+   "frame": 14,
+   "source_image": "TCRMP20171202_clip_CKR_T114.jpeg",
+   "project_id": "test_withAlexandria_22june2026_20260622_040bfc",
+   "project_name": "test_withAlexandria_22june2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-22 16:05:04",
+   "crop_w": 194,
+   "crop_h": 147,
+   "crop": "items/CKR-20171202-T114-x933y653-6a680953/crop.jpg",
+   "mask": "items/CKR-20171202-T114-x933y653-6a680953/mask.png",
+   "full": "items/CKR-20171202-T114-x933y653-6a680953/full.jpg"
+  },
+  {
+   "uid": "CKR-20171202-T114-x459y240-3607a41e",
+   "site": "CKR",
+   "site_full": "Coculus Rock",
+   "year": 2017,
+   "transect": 1,
+   "frame": 14,
+   "source_image": "TCRMP20171202_clip_CKR_T114.jpeg",
+   "project_id": "test_withAlexandria_22june2026_20260622_040bfc",
+   "project_name": "test_withAlexandria_22june2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-22 16:05:04",
+   "crop_w": 208,
+   "crop_h": 178,
+   "crop": "items/CKR-20171202-T114-x459y240-3607a41e/crop.jpg",
+   "mask": "items/CKR-20171202-T114-x459y240-3607a41e/mask.png",
+   "full": "items/CKR-20171202-T114-x459y240-3607a41e/full.jpg"
+  },
+  {
+   "uid": "CRB-20200224-T107-x1527y438-d17ff076",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2020,
+   "transect": 1,
+   "frame": 7,
+   "source_image": "TCRMP20200224_clip_CRB_T107.jpeg",
+   "project_id": "test_withAlexandria_22june2026_20260622_040bfc",
+   "project_name": "test_withAlexandria_22june2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-22 16:05:04",
+   "crop_w": 720,
+   "crop_h": 484,
+   "crop": "items/CRB-20200224-T107-x1527y438-d17ff076/crop.jpg",
+   "mask": "items/CRB-20200224-T107-x1527y438-d17ff076/mask.png",
+   "full": "items/CRB-20200224-T107-x1527y438-d17ff076/full.jpg"
+  },
+  {
+   "uid": "CKR-20221004-T612-x376y1052-46a2fd93",
+   "site": "CKR",
+   "site_full": "Coculus Rock",
+   "year": 2022,
+   "transect": 6,
+   "frame": 12,
+   "source_image": "TCRMP20221004_clip_CKR_T612.jpeg",
+   "project_id": "test_withAlexandria_22june2026_20260622_040bfc",
+   "project_name": "test_withAlexandria_22june2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-22 16:05:05",
+   "crop_w": 720,
+   "crop_h": 520,
+   "crop": "items/CKR-20221004-T612-x376y1052-46a2fd93/crop.jpg",
+   "mask": "items/CKR-20221004-T612-x376y1052-46a2fd93/mask.png",
+   "full": "items/CKR-20221004-T612-x376y1052-46a2fd93/full.jpg"
   }
  ],
  "reviewer_names": [

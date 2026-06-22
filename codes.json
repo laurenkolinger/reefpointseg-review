@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-06-22T15:56:36-04:00",
+ "generated_at": "2026-06-22T16:05:05-04:00",
  "codes": [
   {
    "code": "AA",
@@ -332,22 +332,10 @@
    "group": "Algae"
   },
   {
-   "code": "MA",
-   "name": "Montastraea annularis",
-   "category": "Coral",
-   "group": "Coral"
-  },
-  {
    "code": "MACA",
    "name": "Macroalgae",
    "category": "Macroalgae",
    "group": "Algae"
-  },
-  {
-   "code": "MACX",
-   "name": "Montastraea annularis complex",
-   "category": "Coral",
-   "group": "Coral"
   },
   {
    "code": "MAFO",
@@ -394,18 +382,6 @@
   {
    "code": "MF",
    "name": "Mycetophyllia ferox",
-   "category": "Coral",
-   "group": "Coral"
-  },
-  {
-   "code": "MFAV",
-   "name": "Montastraea faveolata",
-   "category": "Coral",
-   "group": "Coral"
-  },
-  {
-   "code": "MFRA",
-   "name": "Montastraea franksi",
    "category": "Coral",
    "group": "Coral"
   },
@@ -489,7 +465,7 @@
   },
   {
    "code": "OFRA",
-   "name": "Orbicella franksii",
+   "name": "Orbicella franksi",
    "category": "Coral",
    "group": "Coral"
   },
@@ -669,7 +645,7 @@
   },
   {
    "code": "SI",
-   "name": "Stephanocoenia intercepta",
+   "name": "Stephanocoenia intersepta",
    "category": "Coral",
    "group": "Coral"
   },
@@ -820,11 +796,7 @@
     "MILA",
     "MILC",
     "MILS",
-    "MA",
-    "MACX",
     "MC",
-    "MFAV",
-    "MFRA",
     "MSPP",
     "MAN",
     "MAL",
