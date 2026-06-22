@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-06-22T14:14:47-04:00",
+ "generated_at": "2026-06-22T15:56:36-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
@@ -43,7 +43,15 @@
    "crop_h": 402,
    "crop": "items/BIT-20150805-T109-x985y571-9dd32c74/crop.jpg",
    "mask": "items/BIT-20150805-T109-x985y571-9dd32c74/mask.png",
-   "full": "items/BIT-20150805-T109-x985y571-9dd32c74/full.jpg"
+   "full": "items/BIT-20150805-T109-x985y571-9dd32c74/full.jpg",
+   "reviews": [
+    {
+     "reviewer": "LO",
+     "code": "OFRA",
+     "confidence": "high",
+     "at": "2026-06-22T15:56:36-04:00"
+    }
+   ]
   },
   {
    "uid": "BIT-20150805-T109-x1202y712-0560e23e",
@@ -63,7 +71,15 @@
    "crop_h": 380,
    "crop": "items/BIT-20150805-T109-x1202y712-0560e23e/crop.jpg",
    "mask": "items/BIT-20150805-T109-x1202y712-0560e23e/mask.png",
-   "full": "items/BIT-20150805-T109-x1202y712-0560e23e/full.jpg"
+   "full": "items/BIT-20150805-T109-x1202y712-0560e23e/full.jpg",
+   "reviews": [
+    {
+     "reviewer": "LO",
+     "code": "OFRA",
+     "confidence": "high",
+     "at": "2026-06-22T15:56:36-04:00"
+    }
+   ]
   },
   {
    "uid": "BPT-20161003-T108-x464y152-85e8bbaf",
@@ -83,7 +99,15 @@
    "crop_h": 282,
    "crop": "items/BPT-20161003-T108-x464y152-85e8bbaf/crop.jpg",
    "mask": "items/BPT-20161003-T108-x464y152-85e8bbaf/mask.png",
-   "full": "items/BPT-20161003-T108-x464y152-85e8bbaf/full.jpg"
+   "full": "items/BPT-20161003-T108-x464y152-85e8bbaf/full.jpg",
+   "reviews": [
+    {
+     "reviewer": "LO",
+     "code": "OFRA",
+     "confidence": "high",
+     "at": "2026-06-22T15:56:36-04:00"
+    }
+   ]
   },
   {
    "uid": "BPT-20161003-T108-x193y290-190f2c6b",
@@ -123,7 +147,15 @@
    "crop_h": 475,
    "crop": "items/BWR-20171128-T209-x1145y1419-6eb22d3c/crop.jpg",
    "mask": "items/BWR-20171128-T209-x1145y1419-6eb22d3c/mask.png",
-   "full": "items/BWR-20171128-T209-x1145y1419-6eb22d3c/full.jpg"
+   "full": "items/BWR-20171128-T209-x1145y1419-6eb22d3c/full.jpg",
+   "reviews": [
+    {
+     "reviewer": "LO",
+     "code": "OFRA",
+     "confidence": "high",
+     "at": "2026-06-22T15:56:36-04:00"
+    }
+   ]
   },
   {
    "uid": "BWR-20171128-T209-x2173y1228-36df9560",
@@ -785,5 +817,8 @@
    "mask": "items/FLC-20250327-T608-x1856y959-a1522b99/mask.png",
    "full": "items/FLC-20250327-T608-x1856y959-a1522b99/full.jpg"
   }
+ ],
+ "reviewer_names": [
+  "LO"
  ]
 }
