@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-06-05T20:57:18-04:00",
+ "generated_at": "2026-06-22T14:14:47-04:00",
  "codes": [
   {
    "code": "AA",
@@ -332,22 +332,10 @@
    "group": "Algae"
   },
   {
-   "code": "MA",
-   "name": "Montastraea annularis",
-   "category": "Coral",
-   "group": "Coral"
-  },
-  {
    "code": "MACA",
    "name": "Macroalgae",
    "category": "Macroalgae",
    "group": "Algae"
-  },
-  {
-   "code": "MACX",
-   "name": "Montastraea annularis complex",
-   "category": "Coral",
-   "group": "Coral"
   },
   {
    "code": "MAFO",
@@ -394,18 +382,6 @@
   {
    "code": "MF",
    "name": "Mycetophyllia ferox",
-   "category": "Coral",
-   "group": "Coral"
-  },
-  {
-   "code": "MFAV",
-   "name": "Montastraea faveolata",
-   "category": "Coral",
-   "group": "Coral"
-  },
-  {
-   "code": "MFRA",
-   "name": "Montastraea franksi",
    "category": "Coral",
    "group": "Coral"
   },
@@ -489,7 +465,7 @@
   },
   {
    "code": "OFRA",
-   "name": "Orbicella franksii",
+   "name": "Orbicella franksi",
    "category": "Coral",
    "group": "Coral"
   },
@@ -669,7 +645,7 @@
   },
   {
    "code": "SI",
-   "name": "Stephanocoenia intercepta",
+   "name": "Stephanocoenia intersepta",
    "category": "Coral",
    "group": "Coral"
   },
@@ -820,11 +796,7 @@
     "MILA",
     "MILC",
     "MILS",
-    "MA",
-    "MACX",
     "MC",
-    "MFAV",
-    "MFRA",
     "MSPP",
     "MAN",
     "MAL",
@@ -964,5 +936,42 @@
  "something_else": {
   "code": "OTHER_PICK",
   "label": "Something else"
- }
+ },
+ "sites": {
+  "GRP": "Great Pond",
+  "BWR": "Brewers Bay",
+  "FSB": "Fish Bay",
+  "CST": "Castle",
+  "CKR": "Coculus Rock",
+  "MGN": "Magens Bay",
+  "BTY": "Botany Bay",
+  "SPH": "Sprat Hole",
+  "BPT": "Black Point",
+  "CRB": "Coral Bay",
+  "SVN": "Savana",
+  "CBS": "Cane Bay",
+  "EGR": "Eagle Ray",
+  "SRW": "Salt River West",
+  "FLC": "Flat Cay",
+  "BIT": "Buck Island STT",
+  "JKB": "Jacks Bay",
+  "BIX": "Buck Island STX",
+  "SSJ": "St James",
+  "KGC": "Kings Corner",
+  "SHR": "Seahorse Cottage Shoal",
+  "SWT": "South Water",
+  "SCP": "South Capella",
+  "MTS": "Mutton Snapper FSA",
+  "LBP": "Lang Bank EEMP",
+  "CSE": "College Shoal East",
+  "MSR": "Meri Shoal",
+  "SRD": "Salt River Deep",
+  "BID": "Buck Island STX Deep",
+  "LBH": "Lang Bank Red Hind FSA",
+  "CBD": "Cane Bay Deep",
+  "GKT": "Grammanik Tiger FSA",
+  "HBE": "Hind Bank East FSA",
+  "GBF": "Ginsburg Fringe"
+ },
+ "candidate_codes": []
 }

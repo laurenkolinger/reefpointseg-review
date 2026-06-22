@@ -20,10 +20,35 @@
   <div class="counts" id="counts" aria-live="polite"></div>
 </header>
 
+<!-- C2: big, high-contrast, unmissable instruction. The IDs do NOTHING for the
+     model unless the CSV comes back by EMAIL. -->
+<section class="alert" id="returnAlert">
+  <div class="alert-head">Your CSV must come back &mdash; email it, no notes needed</div>
+  <p>Time you spend here is <strong>wasted unless you export the CSV and email it back</strong>.
+     Your IDs are not saved to any server &mdash; they live only in this browser until you send the file.
+     When you finish (or any time), click <strong>Export CSV</strong> at the bottom and
+     <strong>attach the downloaded file to an email</strong> to:</p>
+  <p class="alert-emails"><span id="emailTargets">lauren.olinger@uvi.edu</span></p>
+  <p class="alert-note">No message body required &mdash; just the attachment. This review is
+     <strong>rolling / ongoing</strong>: new masks appear over time, and you may see
+     <strong>tentative IDs from other reviewers</strong> on some cards (clearly marked, not yet accepted).
+     Give your own independent ID regardless.</p>
+</section>
+
+<div class="whobar">
+  <span class="whoami" id="whoami"></span>
+  <a href="#" class="changeName" id="changeName">change name</a>
+</div>
+
 <section class="instructions" id="instructions">
   <details open>
     <summary>How to review (please read)</summary>
     <ol>
+      <li>Enter <strong>your name</strong> when prompted &mdash; it is recorded with every ID you submit so
+          your work can be credited and reconciled with other reviewers.</li>
+      <li>Use the <strong>Project</strong> and <strong>Site</strong> filters to focus on one batch at a time.
+          If one organism is ubiquitous at a site, set the filters and use
+          <strong>Bulk-apply to view</strong> to label every remaining card at once.</li>
       <li>For each card, look at the <strong>close-up</strong> (drag the opacity slider to reveal the mask
           fill; the cyan outline and box mark the segmented organism). Click <em>Show whole frame</em> for
           context.</li>
@@ -34,10 +59,13 @@
       <li>Set <strong>confidence</strong> (defaults to High).</li>
       <li>When done (or after any number of cards), click <strong>Export CSV</strong> at the bottom and
           <strong>email the downloaded file</strong> to the address(es) shown. Your progress is saved in
-          this browser, so you can stop and come back later.</li>
+          this browser, so you can stop and come back later. (With a Project filter active, the export
+          contains only that project's IDs.)</li>
     </ol>
   </details>
 </section>
+
+<div class="filterbar" id="filterbar"></div>
 
 <main id="cards" class="cards"></main>
 
@@ -45,6 +73,22 @@
   <div class="progress" id="progress"></div>
   <button id="exportBtn" class="primary">Export CSV</button>
 </footer>
+
+<!-- C1: reviewer NAME gate. Required before any labeling; persisted in
+     localStorage and written as the `reviewer` column on every CSV row. -->
+<div class="modal" id="nameGate" hidden>
+  <div class="modal-card">
+    <h2>Before you start &mdash; your name</h2>
+    <p>Please enter your name. It is recorded with <strong>every identification you submit</strong> so the
+       operator can credit your work and reconcile it against other reviewers. Stored only in this browser.</p>
+    <input type="text" id="reviewerName" class="nameinput" placeholder="e.g. Jane Doe"
+           autocomplete="name" title="Your name — written into every exported CSV row.">
+    <p class="nameErr" id="nameErr" aria-live="polite"></p>
+    <div class="modal-actions">
+      <button id="nameOk" class="primary">Start reviewing</button>
+    </div>
+  </div>
+</div>
 
 <div class="modal" id="exportModal" hidden>
   <div class="modal-card">
