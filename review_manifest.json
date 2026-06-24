@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-06-24T15:00:18-04:00",
+ "generated_at": "2026-06-24T15:02:18-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 51,
+ "count": 55,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -1216,6 +1216,106 @@
    "crop": "items/BPT-20190212-T404-x1431y1899-236f9047/crop.jpg",
    "mask": "items/BPT-20190212-T404-x1431y1899-236f9047/mask.png",
    "full": "items/BPT-20190212-T404-x1431y1899-236f9047/full.jpg"
+  },
+  {
+   "uid": "BIT-20150805-T218-x964y580-739d97c2",
+   "site": "BIT",
+   "site_full": "Buck Island STT",
+   "year": 2015,
+   "transect": 2,
+   "frame": 18,
+   "source_image": "TCRMP20150805_clip_BIT_T218.jpeg",
+   "project_id": "test_Alexandria_23June2026_20260623_c16ca0",
+   "project_name": "test_Alexandria_23June2026",
+   "featured_codes": [
+    "PA",
+    "OFRA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-24 15:02:17",
+   "crop_w": 152,
+   "crop_h": 164,
+   "crop": "items/BIT-20150805-T218-x964y580-739d97c2/crop.jpg",
+   "mask": "items/BIT-20150805-T218-x964y580-739d97c2/mask.png",
+   "full": "items/BIT-20150805-T218-x964y580-739d97c2/full.jpg"
+  },
+  {
+   "uid": "KGC-20150928-T310-x1226y207-8bb082c3",
+   "site": "KGC",
+   "site_full": "Kings Corner",
+   "year": 2015,
+   "transect": 3,
+   "frame": 10,
+   "source_image": "TCRMP20150928_clip_KGC_T310.jpeg",
+   "project_id": "test_Alexandria_23June2026_20260623_c16ca0",
+   "project_name": "test_Alexandria_23June2026",
+   "featured_codes": [
+    "PA",
+    "OFRA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-24 15:02:17",
+   "crop_w": 312,
+   "crop_h": 330,
+   "crop": "items/KGC-20150928-T310-x1226y207-8bb082c3/crop.jpg",
+   "mask": "items/KGC-20150928-T310-x1226y207-8bb082c3/mask.png",
+   "full": "items/KGC-20150928-T310-x1226y207-8bb082c3/full.jpg"
+  },
+  {
+   "uid": "KGC-20150928-T310-x1840y764-9f47d8a3",
+   "site": "KGC",
+   "site_full": "Kings Corner",
+   "year": 2015,
+   "transect": 3,
+   "frame": 10,
+   "source_image": "TCRMP20150928_clip_KGC_T310.jpeg",
+   "project_id": "test_Alexandria_23June2026_20260623_c16ca0",
+   "project_name": "test_Alexandria_23June2026",
+   "featured_codes": [
+    "PA",
+    "OFRA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-24 15:02:17",
+   "crop_w": 177,
+   "crop_h": 344,
+   "crop": "items/KGC-20150928-T310-x1840y764-9f47d8a3/crop.jpg",
+   "mask": "items/KGC-20150928-T310-x1840y764-9f47d8a3/mask.png",
+   "full": "items/KGC-20150928-T310-x1840y764-9f47d8a3/full.jpg"
+  },
+  {
+   "uid": "CRB-20161024-T101-x757y414-fa21e5a0",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2016,
+   "transect": 1,
+   "frame": 1,
+   "source_image": "TCRMP20161024_clip_CRB_T101.jpeg",
+   "project_id": "test_Alexandria_23June2026_20260623_c16ca0",
+   "project_name": "test_Alexandria_23June2026",
+   "featured_codes": [
+    "PA",
+    "OFRA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-24 15:02:18",
+   "crop_w": 223,
+   "crop_h": 249,
+   "crop": "items/CRB-20161024-T101-x757y414-fa21e5a0/crop.jpg",
+   "mask": "items/CRB-20161024-T101-x757y414-fa21e5a0/mask.png",
+   "full": "items/CRB-20161024-T101-x757y414-fa21e5a0/full.jpg"
   }
  ],
  "reviewer_names": [
