@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-06-24T14:39:50-04:00",
+ "generated_at": "2026-06-24T15:00:18-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 45,
+ "count": 51,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -1066,6 +1066,156 @@
    "crop": "items/CRB-20141208-T219-x777y986-8d27324c/crop.jpg",
    "mask": "items/CRB-20141208-T219-x777y986-8d27324c/mask.png",
    "full": "items/CRB-20141208-T219-x777y986-8d27324c/full.jpg"
+  },
+  {
+   "uid": "CKR-20171202-T114-x97y76-4daeef4a",
+   "site": "CKR",
+   "site_full": "Coculus Rock",
+   "year": 2017,
+   "transect": 1,
+   "frame": 14,
+   "source_image": "TCRMP20171202_clip_CKR_T114.jpeg",
+   "project_id": "test_Alexandria_23June2026_20260623_c16ca0",
+   "project_name": "test_Alexandria_23June2026",
+   "featured_codes": [
+    "PA",
+    "OFRA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-24 15:00:17",
+   "crop_w": 190,
+   "crop_h": 212,
+   "crop": "items/CKR-20171202-T114-x97y76-4daeef4a/crop.jpg",
+   "mask": "items/CKR-20171202-T114-x97y76-4daeef4a/mask.png",
+   "full": "items/CKR-20171202-T114-x97y76-4daeef4a/full.jpg"
+  },
+  {
+   "uid": "CKR-20171202-T114-x54y194-791f67b3",
+   "site": "CKR",
+   "site_full": "Coculus Rock",
+   "year": 2017,
+   "transect": 1,
+   "frame": 14,
+   "source_image": "TCRMP20171202_clip_CKR_T114.jpeg",
+   "project_id": "test_Alexandria_23June2026_20260623_c16ca0",
+   "project_name": "test_Alexandria_23June2026",
+   "featured_codes": [
+    "PA",
+    "OFRA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-24 15:00:17",
+   "crop_w": 131,
+   "crop_h": 168,
+   "crop": "items/CKR-20171202-T114-x54y194-791f67b3/crop.jpg",
+   "mask": "items/CKR-20171202-T114-x54y194-791f67b3/mask.png",
+   "full": "items/CKR-20171202-T114-x54y194-791f67b3/full.jpg"
+  },
+  {
+   "uid": "CKR-20171202-T114-x130y663-c973afd7",
+   "site": "CKR",
+   "site_full": "Coculus Rock",
+   "year": 2017,
+   "transect": 1,
+   "frame": 14,
+   "source_image": "TCRMP20171202_clip_CKR_T114.jpeg",
+   "project_id": "test_Alexandria_23June2026_20260623_c16ca0",
+   "project_name": "test_Alexandria_23June2026",
+   "featured_codes": [
+    "PA",
+    "OFRA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-24 15:00:17",
+   "crop_w": 135,
+   "crop_h": 133,
+   "crop": "items/CKR-20171202-T114-x130y663-c973afd7/crop.jpg",
+   "mask": "items/CKR-20171202-T114-x130y663-c973afd7/mask.png",
+   "full": "items/CKR-20171202-T114-x130y663-c973afd7/full.jpg"
+  },
+  {
+   "uid": "FLC-20190207-T111-x412y920-4ace1190",
+   "site": "FLC",
+   "site_full": "Flat Cay",
+   "year": 2019,
+   "transect": 1,
+   "frame": 11,
+   "source_image": "TCRMP20190207_clip_FLC_T111.jpeg",
+   "project_id": "test_Alexandria_23June2026_20260623_c16ca0",
+   "project_name": "test_Alexandria_23June2026",
+   "featured_codes": [
+    "PA",
+    "OFRA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-24 15:00:17",
+   "crop_w": 514,
+   "crop_h": 625,
+   "crop": "items/FLC-20190207-T111-x412y920-4ace1190/crop.jpg",
+   "mask": "items/FLC-20190207-T111-x412y920-4ace1190/mask.png",
+   "full": "items/FLC-20190207-T111-x412y920-4ace1190/full.jpg"
+  },
+  {
+   "uid": "BPT-20190212-T404-x3392y1215-d946327a",
+   "site": "BPT",
+   "site_full": "Black Point",
+   "year": 2019,
+   "transect": 4,
+   "frame": 4,
+   "source_image": "TCRMP20190212_clip_BPT_T404.jpeg",
+   "project_id": "test_Alexandria_23June2026_20260623_c16ca0",
+   "project_name": "test_Alexandria_23June2026",
+   "featured_codes": [
+    "PA",
+    "OFRA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-24 15:00:18",
+   "crop_w": 526,
+   "crop_h": 720,
+   "crop": "items/BPT-20190212-T404-x3392y1215-d946327a/crop.jpg",
+   "mask": "items/BPT-20190212-T404-x3392y1215-d946327a/mask.png",
+   "full": "items/BPT-20190212-T404-x3392y1215-d946327a/full.jpg"
+  },
+  {
+   "uid": "BPT-20190212-T404-x1431y1899-236f9047",
+   "site": "BPT",
+   "site_full": "Black Point",
+   "year": 2019,
+   "transect": 4,
+   "frame": 4,
+   "source_image": "TCRMP20190212_clip_BPT_T404.jpeg",
+   "project_id": "test_Alexandria_23June2026_20260623_c16ca0",
+   "project_name": "test_Alexandria_23June2026",
+   "featured_codes": [
+    "PA",
+    "OFRA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-24 15:00:18",
+   "crop_w": 586,
+   "crop_h": 578,
+   "crop": "items/BPT-20190212-T404-x1431y1899-236f9047/crop.jpg",
+   "mask": "items/BPT-20190212-T404-x1431y1899-236f9047/mask.png",
+   "full": "items/BPT-20190212-T404-x1431y1899-236f9047/full.jpg"
   }
  ],
  "reviewer_names": [
