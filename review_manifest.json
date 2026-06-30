@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-06-24T15:03:23-04:00",
+ "generated_at": "2026-06-30T12:59:54-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 89,
+ "count": 94,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -2166,6 +2166,131 @@
    "crop": "items/SCP-20241025-T207-x1860y232-2ddd52b2/crop.jpg",
    "mask": "items/SCP-20241025-T207-x1860y232-2ddd52b2/mask.png",
    "full": "items/SCP-20241025-T207-x1860y232-2ddd52b2/full.jpg"
+  },
+  {
+   "uid": "CKR-20161006-T504-x174y1002-8d7b7a75",
+   "site": "CKR",
+   "site_full": "Coculus Rock",
+   "year": 2016,
+   "transect": 5,
+   "frame": 4,
+   "source_image": "TCRMP20161006_clip_CKR_T504.jpeg",
+   "project_id": "LO_test_30june_20260630_781123",
+   "project_name": "LO_test_30june",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-30 12:59:54",
+   "crop_w": 194,
+   "crop_h": 147,
+   "crop": "items/CKR-20161006-T504-x174y1002-8d7b7a75/crop.jpg",
+   "mask": "items/CKR-20161006-T504-x174y1002-8d7b7a75/mask.png",
+   "full": "items/CKR-20161006-T504-x174y1002-8d7b7a75/full.jpg"
+  },
+  {
+   "uid": "KGC-20161015-T118-x992y972-ba983350",
+   "site": "KGC",
+   "site_full": "Kings Corner",
+   "year": 2016,
+   "transect": 1,
+   "frame": 18,
+   "source_image": "TCRMP20161015_clip_KGC_T118.jpeg",
+   "project_id": "LO_test_30june_20260630_781123",
+   "project_name": "LO_test_30june",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-30 12:59:54",
+   "crop_w": 707,
+   "crop_h": 347,
+   "crop": "items/KGC-20161015-T118-x992y972-ba983350/crop.jpg",
+   "mask": "items/KGC-20161015-T118-x992y972-ba983350/mask.png",
+   "full": "items/KGC-20161015-T118-x992y972-ba983350/full.jpg"
+  },
+  {
+   "uid": "KGC-20161015-T118-x965y742-e5e0d875",
+   "site": "KGC",
+   "site_full": "Kings Corner",
+   "year": 2016,
+   "transect": 1,
+   "frame": 18,
+   "source_image": "TCRMP20161015_clip_KGC_T118.jpeg",
+   "project_id": "LO_test_30june_20260630_781123",
+   "project_name": "LO_test_30june",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-30 12:59:54",
+   "crop_w": 606,
+   "crop_h": 322,
+   "crop": "items/KGC-20161015-T118-x965y742-e5e0d875/crop.jpg",
+   "mask": "items/KGC-20161015-T118-x965y742-e5e0d875/mask.png",
+   "full": "items/KGC-20161015-T118-x965y742-e5e0d875/full.jpg"
+  },
+  {
+   "uid": "KGC-20161015-T118-x63y218-1478d7a9",
+   "site": "KGC",
+   "site_full": "Kings Corner",
+   "year": 2016,
+   "transect": 1,
+   "frame": 18,
+   "source_image": "TCRMP20161015_clip_KGC_T118.jpeg",
+   "project_id": "LO_test_30june_20260630_781123",
+   "project_name": "LO_test_30june",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-30 12:59:54",
+   "crop_w": 190,
+   "crop_h": 271,
+   "crop": "items/KGC-20161015-T118-x63y218-1478d7a9/crop.jpg",
+   "mask": "items/KGC-20161015-T118-x63y218-1478d7a9/mask.png",
+   "full": "items/KGC-20161015-T118-x63y218-1478d7a9/full.jpg"
+  },
+  {
+   "uid": "KGC-20161015-T118-x1473y150-f4c58d70",
+   "site": "KGC",
+   "site_full": "Kings Corner",
+   "year": 2016,
+   "transect": 1,
+   "frame": 18,
+   "source_image": "TCRMP20161015_clip_KGC_T118.jpeg",
+   "project_id": "LO_test_30june_20260630_781123",
+   "project_name": "LO_test_30june",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-06-30 12:59:54",
+   "crop_w": 234,
+   "crop_h": 249,
+   "crop": "items/KGC-20161015-T118-x1473y150-f4c58d70/crop.jpg",
+   "mask": "items/KGC-20161015-T118-x1473y150-f4c58d70/mask.png",
+   "full": "items/KGC-20161015-T118-x1473y150-f4c58d70/full.jpg"
   }
  ],
  "reviewer_names": [
