@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-06-30T13:32:48-04:00",
+ "generated_at": "2026-07-01T13:32:25-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 110,
+ "count": 115,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -2691,6 +2691,131 @@
    "crop": "items/BPT-20211022-T511-x1812y375-8f689665/crop.jpg",
    "mask": "items/BPT-20211022-T511-x1812y375-8f689665/mask.png",
    "full": "items/BPT-20211022-T511-x1812y375-8f689665/full.jpg"
+  },
+  {
+   "uid": "CRB-20141208-T318-x786y970-6f2340c2",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2014,
+   "transect": 3,
+   "frame": 18,
+   "source_image": "TCRMP20141208_clip_CRB_T318.jpeg",
+   "project_id": "26-07-01_AT_test_1July2026",
+   "project_name": "AT_test_1July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-01 13:32:25",
+   "crop_w": 720,
+   "crop_h": 433,
+   "crop": "items/CRB-20141208-T318-x786y970-6f2340c2/crop.jpg",
+   "mask": "items/CRB-20141208-T318-x786y970-6f2340c2/mask.png",
+   "full": "items/CRB-20141208-T318-x786y970-6f2340c2/full.jpg"
+  },
+  {
+   "uid": "CRB-20141208-T318-x729y702-9915399e",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2014,
+   "transect": 3,
+   "frame": 18,
+   "source_image": "TCRMP20141208_clip_CRB_T318.jpeg",
+   "project_id": "26-07-01_AT_test_1July2026",
+   "project_name": "AT_test_1July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-01 13:32:25",
+   "crop_w": 469,
+   "crop_h": 497,
+   "crop": "items/CRB-20141208-T318-x729y702-9915399e/crop.jpg",
+   "mask": "items/CRB-20141208-T318-x729y702-9915399e/mask.png",
+   "full": "items/CRB-20141208-T318-x729y702-9915399e/full.jpg"
+  },
+  {
+   "uid": "CRB-20141208-T504-x656y31-6cc396aa",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2014,
+   "transect": 5,
+   "frame": 4,
+   "source_image": "TCRMP20141208_clip_CRB_T504.jpeg",
+   "project_id": "26-07-01_AT_test_1July2026",
+   "project_name": "AT_test_1July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-01 13:32:25",
+   "crop_w": 249,
+   "crop_h": 83,
+   "crop": "items/CRB-20141208-T504-x656y31-6cc396aa/crop.jpg",
+   "mask": "items/CRB-20141208-T504-x656y31-6cc396aa/mask.png",
+   "full": "items/CRB-20141208-T504-x656y31-6cc396aa/full.jpg"
+  },
+  {
+   "uid": "BIT-20150805-T218-x898y681-0c049891",
+   "site": "BIT",
+   "site_full": "Buck Island STT",
+   "year": 2015,
+   "transect": 2,
+   "frame": 18,
+   "source_image": "TCRMP20150805_clip_BIT_T218.jpeg",
+   "project_id": "26-07-01_AT_test_1July2026",
+   "project_name": "AT_test_1July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-01 13:32:25",
+   "crop_w": 179,
+   "crop_h": 196,
+   "crop": "items/BIT-20150805-T218-x898y681-0c049891/crop.jpg",
+   "mask": "items/BIT-20150805-T218-x898y681-0c049891/mask.png",
+   "full": "items/BIT-20150805-T218-x898y681-0c049891/full.jpg"
+  },
+  {
+   "uid": "BIT-20150805-T218-x1830y645-2c654eb3",
+   "site": "BIT",
+   "site_full": "Buck Island STT",
+   "year": 2015,
+   "transect": 2,
+   "frame": 18,
+   "source_image": "TCRMP20150805_clip_BIT_T218.jpeg",
+   "project_id": "26-07-01_AT_test_1July2026",
+   "project_name": "AT_test_1July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-01 13:32:25",
+   "crop_w": 185,
+   "crop_h": 287,
+   "crop": "items/BIT-20150805-T218-x1830y645-2c654eb3/crop.jpg",
+   "mask": "items/BIT-20150805-T218-x1830y645-2c654eb3/mask.png",
+   "full": "items/BIT-20150805-T218-x1830y645-2c654eb3/full.jpg"
   }
  ],
  "reviewer_names": [
