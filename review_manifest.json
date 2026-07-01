@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-01T14:21:01-04:00",
+ "generated_at": "2026-07-01T14:48:45-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 143,
+ "count": 150,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -3516,6 +3516,181 @@
    "crop": "items/SHR-20171212-T311-x1764y105-9019ef36/crop.jpg",
    "mask": "items/SHR-20171212-T311-x1764y105-9019ef36/mask.png",
    "full": "items/SHR-20171212-T311-x1764y105-9019ef36/full.jpg"
+  },
+  {
+   "uid": "CRB-20181025-T506-x2487y267-0fc64e19",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2018,
+   "transect": 5,
+   "frame": 6,
+   "source_image": "TCRMP20181025_clip_CRB_T506.jpeg",
+   "project_id": "26-07-01_AT_test_1July2026",
+   "project_name": "AT_test_1July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-01 14:48:43",
+   "crop_w": 719,
+   "crop_h": 720,
+   "crop": "items/CRB-20181025-T506-x2487y267-0fc64e19/crop.jpg",
+   "mask": "items/CRB-20181025-T506-x2487y267-0fc64e19/mask.png",
+   "full": "items/CRB-20181025-T506-x2487y267-0fc64e19/full.jpg"
+  },
+  {
+   "uid": "CRB-20181025-T506-x1691y149-0bb82395",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2018,
+   "transect": 5,
+   "frame": 6,
+   "source_image": "TCRMP20181025_clip_CRB_T506.jpeg",
+   "project_id": "26-07-01_AT_test_1July2026",
+   "project_name": "AT_test_1July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-01 14:48:43",
+   "crop_w": 478,
+   "crop_h": 370,
+   "crop": "items/CRB-20181025-T506-x1691y149-0bb82395/crop.jpg",
+   "mask": "items/CRB-20181025-T506-x1691y149-0bb82395/mask.png",
+   "full": "items/CRB-20181025-T506-x1691y149-0bb82395/full.jpg"
+  },
+  {
+   "uid": "CRB-20181025-T506-x2291y1805-1844dfc5",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2018,
+   "transect": 5,
+   "frame": 6,
+   "source_image": "TCRMP20181025_clip_CRB_T506.jpeg",
+   "project_id": "26-07-01_AT_test_1July2026",
+   "project_name": "AT_test_1July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-01 14:48:44",
+   "crop_w": 532,
+   "crop_h": 476,
+   "crop": "items/CRB-20181025-T506-x2291y1805-1844dfc5/crop.jpg",
+   "mask": "items/CRB-20181025-T506-x2291y1805-1844dfc5/mask.png",
+   "full": "items/CRB-20181025-T506-x2291y1805-1844dfc5/full.jpg"
+  },
+  {
+   "uid": "BPT-20181121-T507-x944y214-74be81c1",
+   "site": "BPT",
+   "site_full": "Black Point",
+   "year": 2018,
+   "transect": 5,
+   "frame": 7,
+   "source_image": "TCRMP20181121_clip_BPT_T507.jpeg",
+   "project_id": "26-07-01_AT_test_1July2026",
+   "project_name": "AT_test_1July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-01 14:48:44",
+   "crop_w": 621,
+   "crop_h": 502,
+   "crop": "items/BPT-20181121-T507-x944y214-74be81c1/crop.jpg",
+   "mask": "items/BPT-20181121-T507-x944y214-74be81c1/mask.png",
+   "full": "items/BPT-20181121-T507-x944y214-74be81c1/full.jpg"
+  },
+  {
+   "uid": "BPT-20190212-T404-x1418y2024-432952a1",
+   "site": "BPT",
+   "site_full": "Black Point",
+   "year": 2019,
+   "transect": 4,
+   "frame": 4,
+   "source_image": "TCRMP20190212_clip_BPT_T404.jpeg",
+   "project_id": "26-07-01_AT_test_1July2026",
+   "project_name": "AT_test_1July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-01 14:48:44",
+   "crop_w": 662,
+   "crop_h": 578,
+   "crop": "items/BPT-20190212-T404-x1418y2024-432952a1/crop.jpg",
+   "mask": "items/BPT-20190212-T404-x1418y2024-432952a1/mask.png",
+   "full": "items/BPT-20190212-T404-x1418y2024-432952a1/full.jpg"
+  },
+  {
+   "uid": "BID-20191015-T213-x1009y1266-131b0326",
+   "site": "BID",
+   "site_full": "Buck Island STX Deep",
+   "year": 2019,
+   "transect": 2,
+   "frame": 13,
+   "source_image": "TCRMP20191015_clip_BID_T213.jpeg",
+   "project_id": "26-07-01_AT_test_1July2026",
+   "project_name": "AT_test_1July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-01 14:48:44",
+   "crop_w": 720,
+   "crop_h": 655,
+   "crop": "items/BID-20191015-T213-x1009y1266-131b0326/crop.jpg",
+   "mask": "items/BID-20191015-T213-x1009y1266-131b0326/mask.png",
+   "full": "items/BID-20191015-T213-x1009y1266-131b0326/full.jpg"
+  },
+  {
+   "uid": "BID-20191015-T213-x422y2116-82bb4077",
+   "site": "BID",
+   "site_full": "Buck Island STX Deep",
+   "year": 2019,
+   "transect": 2,
+   "frame": 13,
+   "source_image": "TCRMP20191015_clip_BID_T213.jpeg",
+   "project_id": "26-07-01_AT_test_1July2026",
+   "project_name": "AT_test_1July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-01 14:48:45",
+   "crop_w": 542,
+   "crop_h": 329,
+   "crop": "items/BID-20191015-T213-x422y2116-82bb4077/crop.jpg",
+   "mask": "items/BID-20191015-T213-x422y2116-82bb4077/mask.png",
+   "full": "items/BID-20191015-T213-x422y2116-82bb4077/full.jpg"
   }
  ],
  "reviewer_names": [
