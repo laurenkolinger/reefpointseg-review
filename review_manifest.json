@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-01T15:02:29-04:00",
+ "generated_at": "2026-07-02T16:10:14-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 161,
+ "count": 163,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -3966,6 +3966,56 @@
    "crop": "items/CRB-20201210-T303-x1093y1080-c9e1e7a4/crop.jpg",
    "mask": "items/CRB-20201210-T303-x1093y1080-c9e1e7a4/mask.png",
    "full": "items/CRB-20201210-T303-x1093y1080-c9e1e7a4/full.jpg"
+  },
+  {
+   "uid": "CBS-20141012-T306-x389y253-b55b91c9",
+   "site": "CBS",
+   "site_full": "Cane Bay",
+   "year": 2014,
+   "transect": 3,
+   "frame": 6,
+   "source_image": "TCRMP20141012_clip_CBS_T306.jpeg",
+   "project_id": "26-07-02_AT_test_2July2026",
+   "project_name": "AT_test_2July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-02 16:10:14",
+   "crop_w": 298,
+   "crop_h": 294,
+   "crop": "items/CBS-20141012-T306-x389y253-b55b91c9/crop.jpg",
+   "mask": "items/CBS-20141012-T306-x389y253-b55b91c9/mask.png",
+   "full": "items/CBS-20141012-T306-x389y253-b55b91c9/full.jpg"
+  },
+  {
+   "uid": "CRB-20141208-T517-x1028y1044-52d5d23b",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2014,
+   "transect": 5,
+   "frame": 17,
+   "source_image": "TCRMP20141208_clip_CRB_T517.jpeg",
+   "project_id": "26-07-02_AT_test_2July2026",
+   "project_name": "AT_test_2July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-02 16:10:14",
+   "crop_w": 546,
+   "crop_h": 437,
+   "crop": "items/CRB-20141208-T517-x1028y1044-52d5d23b/crop.jpg",
+   "mask": "items/CRB-20141208-T517-x1028y1044-52d5d23b/mask.png",
+   "full": "items/CRB-20141208-T517-x1028y1044-52d5d23b/full.jpg"
   }
  ],
  "reviewer_names": [
