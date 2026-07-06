@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-06T16:50:06-04:00",
+ "generated_at": "2026-07-06T16:53:41-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 198,
+ "count": 202,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -4875,6 +4875,98 @@
    "crop": "items/MSR-20141208-T110-x833y272-6edcc73b/crop.jpg",
    "mask": "items/MSR-20141208-T110-x833y272-6edcc73b/mask.png",
    "full": "items/MSR-20141208-T110-x833y272-6edcc73b/full.jpg"
+  },
+  {
+   "uid": "JKB-20150930-T611-x1402y789-f64cbd6d",
+   "site": "JKB",
+   "site_full": "Jacks Bay",
+   "year": 2015,
+   "transect": 6,
+   "frame": 11,
+   "source_image": "TCRMP20150930_clip_JKB_T611.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 16:53:41",
+   "crop_w": 123,
+   "crop_h": 120,
+   "crop": "items/JKB-20150930-T611-x1402y789-f64cbd6d/crop.jpg",
+   "mask": "items/JKB-20150930-T611-x1402y789-f64cbd6d/mask.png",
+   "full": "items/JKB-20150930-T611-x1402y789-f64cbd6d/full.jpg"
+  },
+  {
+   "uid": "LBH-20150930-T507-x1007y739-0e51980a",
+   "site": "LBH",
+   "site_full": "Lang Bank Red Hind FSA",
+   "year": 2015,
+   "transect": 5,
+   "frame": 7,
+   "source_image": "TCRMP20150930_clip_LBH_T507.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 16:53:41",
+   "crop_w": 129,
+   "crop_h": 145,
+   "crop": "items/LBH-20150930-T507-x1007y739-0e51980a/crop.jpg",
+   "mask": "items/LBH-20150930-T507-x1007y739-0e51980a/mask.png",
+   "full": "items/LBH-20150930-T507-x1007y739-0e51980a/full.jpg"
+  },
+  {
+   "uid": "EGR-20151003-T614-x1078y719-176cbf71",
+   "site": "EGR",
+   "site_full": "Eagle Ray",
+   "year": 2015,
+   "transect": 6,
+   "frame": 14,
+   "source_image": "TCRMP20151003_clip_EGR_T614.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 16:53:41",
+   "crop_w": 185,
+   "crop_h": 198,
+   "crop": "items/EGR-20151003-T614-x1078y719-176cbf71/crop.jpg",
+   "mask": "items/EGR-20151003-T614-x1078y719-176cbf71/mask.png",
+   "full": "items/EGR-20151003-T614-x1078y719-176cbf71/full.jpg"
+  },
+  {
+   "uid": "EGR-20151003-T615-x1386y397-a9d4550b",
+   "site": "EGR",
+   "site_full": "Eagle Ray",
+   "year": 2015,
+   "transect": 6,
+   "frame": 15,
+   "source_image": "TCRMP20151003_clip_EGR_T615.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 16:53:41",
+   "crop_w": 243,
+   "crop_h": 286,
+   "crop": "items/EGR-20151003-T615-x1386y397-a9d4550b/crop.jpg",
+   "mask": "items/EGR-20151003-T615-x1386y397-a9d4550b/mask.png",
+   "full": "items/EGR-20151003-T615-x1386y397-a9d4550b/full.jpg"
   }
  ],
  "reviewer_names": [
