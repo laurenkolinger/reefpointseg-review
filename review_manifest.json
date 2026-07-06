@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-06T16:53:41-04:00",
+ "generated_at": "2026-07-06T17:08:00-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 202,
+ "count": 203,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -4967,6 +4967,29 @@
    "crop": "items/EGR-20151003-T615-x1386y397-a9d4550b/crop.jpg",
    "mask": "items/EGR-20151003-T615-x1386y397-a9d4550b/mask.png",
    "full": "items/EGR-20151003-T615-x1386y397-a9d4550b/full.jpg"
+  },
+  {
+   "uid": "CKR-20161006-T203-x1207y731-da8638b1",
+   "site": "CKR",
+   "site_full": "Coculus Rock",
+   "year": 2016,
+   "transect": 2,
+   "frame": 3,
+   "source_image": "TCRMP20161006_clip_CKR_T203.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 17:08:00",
+   "crop_w": 361,
+   "crop_h": 227,
+   "crop": "items/CKR-20161006-T203-x1207y731-da8638b1/crop.jpg",
+   "mask": "items/CKR-20161006-T203-x1207y731-da8638b1/mask.png",
+   "full": "items/CKR-20161006-T203-x1207y731-da8638b1/full.jpg"
   }
  ],
  "reviewer_names": [
