@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-06T15:21:30-04:00",
+ "generated_at": "2026-07-06T15:32:46-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 189,
+ "count": 190,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -4666,6 +4666,31 @@
    "crop": "items/SPH-20231112-T510-x327y795-80c1f080/crop.jpg",
    "mask": "items/SPH-20231112-T510-x327y795-80c1f080/mask.png",
    "full": "items/SPH-20231112-T510-x327y795-80c1f080/full.jpg"
+  },
+  {
+   "uid": "CRB-20241024-T611-x1847y209-6a0ded8f",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2024,
+   "transect": 6,
+   "frame": 11,
+   "source_image": "TCRMP20241024_clip_CRB_T611.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 15:32:46",
+   "crop_w": 200,
+   "crop_h": 153,
+   "crop": "items/CRB-20241024-T611-x1847y209-6a0ded8f/crop.jpg",
+   "mask": "items/CRB-20241024-T611-x1847y209-6a0ded8f/mask.png",
+   "full": "items/CRB-20241024-T611-x1847y209-6a0ded8f/full.jpg"
   }
  ],
  "reviewer_names": [
