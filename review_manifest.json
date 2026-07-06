@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-06T14:00:56-04:00",
+ "generated_at": "2026-07-06T15:21:30-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 187,
+ "count": 189,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -4616,6 +4616,56 @@
    "crop": "items/CKR-20221004-T612-x1793y219-15c9f57d/crop.jpg",
    "mask": "items/CKR-20221004-T612-x1793y219-15c9f57d/mask.png",
    "full": "items/CKR-20221004-T612-x1793y219-15c9f57d/full.jpg"
+  },
+  {
+   "uid": "BIX-20231109-T213-x715y1038-0aec4d89",
+   "site": "BIX",
+   "site_full": "Buck Island STX",
+   "year": 2023,
+   "transect": 2,
+   "frame": 13,
+   "source_image": "TCRMP20231109_clip_BIX_T213.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 15:21:30",
+   "crop_w": 229,
+   "crop_h": 133,
+   "crop": "items/BIX-20231109-T213-x715y1038-0aec4d89/crop.jpg",
+   "mask": "items/BIX-20231109-T213-x715y1038-0aec4d89/mask.png",
+   "full": "items/BIX-20231109-T213-x715y1038-0aec4d89/full.jpg"
+  },
+  {
+   "uid": "SPH-20231112-T510-x327y795-80c1f080",
+   "site": "SPH",
+   "site_full": "Sprat Hole",
+   "year": 2023,
+   "transect": 5,
+   "frame": 10,
+   "source_image": "TCRMP20231112_clip_SPH_T510.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 15:21:30",
+   "crop_w": 382,
+   "crop_h": 367,
+   "crop": "items/SPH-20231112-T510-x327y795-80c1f080/crop.jpg",
+   "mask": "items/SPH-20231112-T510-x327y795-80c1f080/mask.png",
+   "full": "items/SPH-20231112-T510-x327y795-80c1f080/full.jpg"
   }
  ],
  "reviewer_names": [
