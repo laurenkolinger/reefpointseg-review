@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-06T12:27:01-04:00",
+ "generated_at": "2026-07-06T12:49:16-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 171,
+ "count": 176,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -4216,6 +4216,131 @@
    "crop": "items/CRB-20151016-T606-x660y999-a8f93c6b/crop.jpg",
    "mask": "items/CRB-20151016-T606-x660y999-a8f93c6b/mask.png",
    "full": "items/CRB-20151016-T606-x660y999-a8f93c6b/full.jpg"
+  },
+  {
+   "uid": "FLC-20161004-T212-x525y548-8b52bc74",
+   "site": "FLC",
+   "site_full": "Flat Cay",
+   "year": 2016,
+   "transect": 2,
+   "frame": 12,
+   "source_image": "TCRMP20161004_clip_FLC_T212.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 12:49:16",
+   "crop_w": 154,
+   "crop_h": 149,
+   "crop": "items/FLC-20161004-T212-x525y548-8b52bc74/crop.jpg",
+   "mask": "items/FLC-20161004-T212-x525y548-8b52bc74/mask.png",
+   "full": "items/FLC-20161004-T212-x525y548-8b52bc74/full.jpg"
+  },
+  {
+   "uid": "CRB-20161024-T302-x929y604-db82ae58",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2016,
+   "transect": 3,
+   "frame": 2,
+   "source_image": "TCRMP20161024_clip_CRB_T302.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 12:49:16",
+   "crop_w": 302,
+   "crop_h": 200,
+   "crop": "items/CRB-20161024-T302-x929y604-db82ae58/crop.jpg",
+   "mask": "items/CRB-20161024-T302-x929y604-db82ae58/mask.png",
+   "full": "items/CRB-20161024-T302-x929y604-db82ae58/full.jpg"
+  },
+  {
+   "uid": "CRB-20161024-T302-x233y590-9f83659a",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2016,
+   "transect": 3,
+   "frame": 2,
+   "source_image": "TCRMP20161024_clip_CRB_T302.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 12:49:16",
+   "crop_w": 171,
+   "crop_h": 172,
+   "crop": "items/CRB-20161024-T302-x233y590-9f83659a/crop.jpg",
+   "mask": "items/CRB-20161024-T302-x233y590-9f83659a/mask.png",
+   "full": "items/CRB-20161024-T302-x233y590-9f83659a/full.jpg"
+  },
+  {
+   "uid": "CKR-20171202-T114-x54y174-9655e55b",
+   "site": "CKR",
+   "site_full": "Coculus Rock",
+   "year": 2017,
+   "transect": 1,
+   "frame": 14,
+   "source_image": "TCRMP20171202_clip_CKR_T114.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 12:49:16",
+   "crop_w": 121,
+   "crop_h": 166,
+   "crop": "items/CKR-20171202-T114-x54y174-9655e55b/crop.jpg",
+   "mask": "items/CKR-20171202-T114-x54y174-9655e55b/mask.png",
+   "full": "items/CKR-20171202-T114-x54y174-9655e55b/full.jpg"
+  },
+  {
+   "uid": "CKR-20171202-T114-x93y123-3d6c4036",
+   "site": "CKR",
+   "site_full": "Coculus Rock",
+   "year": 2017,
+   "transect": 1,
+   "frame": 14,
+   "source_image": "TCRMP20171202_clip_CKR_T114.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 12:49:16",
+   "crop_w": 180,
+   "crop_h": 205,
+   "crop": "items/CKR-20171202-T114-x93y123-3d6c4036/crop.jpg",
+   "mask": "items/CKR-20171202-T114-x93y123-3d6c4036/mask.png",
+   "full": "items/CKR-20171202-T114-x93y123-3d6c4036/full.jpg"
   }
  ],
  "reviewer_names": [
