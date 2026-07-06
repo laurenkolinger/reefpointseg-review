@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-06T12:49:16-04:00",
+ "generated_at": "2026-07-06T13:46:58-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 176,
+ "count": 183,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -4341,6 +4341,181 @@
    "crop": "items/CKR-20171202-T114-x93y123-3d6c4036/crop.jpg",
    "mask": "items/CKR-20171202-T114-x93y123-3d6c4036/mask.png",
    "full": "items/CKR-20171202-T114-x93y123-3d6c4036/full.jpg"
+  },
+  {
+   "uid": "CRB-20200224-T204-x1208y996-d7305b24",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2020,
+   "transect": 2,
+   "frame": 4,
+   "source_image": "TCRMP20200224_clip_CRB_T204.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 13:46:57",
+   "crop_w": 156,
+   "crop_h": 143,
+   "crop": "items/CRB-20200224-T204-x1208y996-d7305b24/crop.jpg",
+   "mask": "items/CRB-20200224-T204-x1208y996-d7305b24/mask.png",
+   "full": "items/CRB-20200224-T204-x1208y996-d7305b24/full.jpg"
+  },
+  {
+   "uid": "CRB-20200224-T204-x303y173-52fc0dbb",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2020,
+   "transect": 2,
+   "frame": 4,
+   "source_image": "TCRMP20200224_clip_CRB_T204.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 13:46:57",
+   "crop_w": 365,
+   "crop_h": 388,
+   "crop": "items/CRB-20200224-T204-x303y173-52fc0dbb/crop.jpg",
+   "mask": "items/CRB-20200224-T204-x303y173-52fc0dbb/mask.png",
+   "full": "items/CRB-20200224-T204-x303y173-52fc0dbb/full.jpg"
+  },
+  {
+   "uid": "CRB-20201210-T301-x1061y754-17e5ad03",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2020,
+   "transect": 3,
+   "frame": 1,
+   "source_image": "TCRMP20201210_clip_CRB_T301.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 13:46:57",
+   "crop_w": 331,
+   "crop_h": 339,
+   "crop": "items/CRB-20201210-T301-x1061y754-17e5ad03/crop.jpg",
+   "mask": "items/CRB-20201210-T301-x1061y754-17e5ad03/mask.png",
+   "full": "items/CRB-20201210-T301-x1061y754-17e5ad03/full.jpg"
+  },
+  {
+   "uid": "CRB-20201210-T301-x724y536-550a240d",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2020,
+   "transect": 3,
+   "frame": 1,
+   "source_image": "TCRMP20201210_clip_CRB_T301.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 13:46:57",
+   "crop_w": 190,
+   "crop_h": 242,
+   "crop": "items/CRB-20201210-T301-x724y536-550a240d/crop.jpg",
+   "mask": "items/CRB-20201210-T301-x724y536-550a240d/mask.png",
+   "full": "items/CRB-20201210-T301-x724y536-550a240d/full.jpg"
+  },
+  {
+   "uid": "CRB-20201210-T301-x831y654-32a407d8",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2020,
+   "transect": 3,
+   "frame": 1,
+   "source_image": "TCRMP20201210_clip_CRB_T301.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 13:46:58",
+   "crop_w": 212,
+   "crop_h": 148,
+   "crop": "items/CRB-20201210-T301-x831y654-32a407d8/crop.jpg",
+   "mask": "items/CRB-20201210-T301-x831y654-32a407d8/mask.png",
+   "full": "items/CRB-20201210-T301-x831y654-32a407d8/full.jpg"
+  },
+  {
+   "uid": "KGC-20210314-T214-x442y593-f45f9895",
+   "site": "KGC",
+   "site_full": "Kings Corner",
+   "year": 2021,
+   "transect": 2,
+   "frame": 14,
+   "source_image": "TCRMP20210314_clip_KGC_T214.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 13:46:58",
+   "crop_w": 317,
+   "crop_h": 294,
+   "crop": "items/KGC-20210314-T214-x442y593-f45f9895/crop.jpg",
+   "mask": "items/KGC-20210314-T214-x442y593-f45f9895/mask.png",
+   "full": "items/KGC-20210314-T214-x442y593-f45f9895/full.jpg"
+  },
+  {
+   "uid": "KGC-20210314-T214-x487y262-854b3e08",
+   "site": "KGC",
+   "site_full": "Kings Corner",
+   "year": 2021,
+   "transect": 2,
+   "frame": 14,
+   "source_image": "TCRMP20210314_clip_KGC_T214.jpeg",
+   "project_id": "26-07-06_AT_test_6July2026",
+   "project_name": "AT_test_6July2026",
+   "featured_codes": [
+    "OFRA",
+    "PA",
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-06 13:46:58",
+   "crop_w": 271,
+   "crop_h": 250,
+   "crop": "items/KGC-20210314-T214-x487y262-854b3e08/crop.jpg",
+   "mask": "items/KGC-20210314-T214-x487y262-854b3e08/mask.png",
+   "full": "items/KGC-20210314-T214-x487y262-854b3e08/full.jpg"
   }
  ],
  "reviewer_names": [
