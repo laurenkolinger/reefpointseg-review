@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-07T13:43:23-04:00",
+ "generated_at": "2026-07-07T15:54:29-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 207,
+ "count": 213,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -5082,6 +5082,144 @@
    "crop": "items/CRB-20181025-T313-x514y111-ad6bdd82/crop.jpg",
    "mask": "items/CRB-20181025-T313-x514y111-ad6bdd82/mask.png",
    "full": "items/CRB-20181025-T313-x514y111-ad6bdd82/full.jpg"
+  },
+  {
+   "uid": "CRB-20181025-T507-x1367y134-02cfe488",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2018,
+   "transect": 5,
+   "frame": 7,
+   "source_image": "TCRMP20181025_clip_CRB_T507.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-07 15:54:28",
+   "crop_w": 244,
+   "crop_h": 242,
+   "crop": "items/CRB-20181025-T507-x1367y134-02cfe488/crop.jpg",
+   "mask": "items/CRB-20181025-T507-x1367y134-02cfe488/mask.png",
+   "full": "items/CRB-20181025-T507-x1367y134-02cfe488/full.jpg"
+  },
+  {
+   "uid": "CRB-20181025-T507-x1706y501-5c9c3de3",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2018,
+   "transect": 5,
+   "frame": 7,
+   "source_image": "TCRMP20181025_clip_CRB_T507.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-07 15:54:28",
+   "crop_w": 260,
+   "crop_h": 218,
+   "crop": "items/CRB-20181025-T507-x1706y501-5c9c3de3/crop.jpg",
+   "mask": "items/CRB-20181025-T507-x1706y501-5c9c3de3/mask.png",
+   "full": "items/CRB-20181025-T507-x1706y501-5c9c3de3/full.jpg"
+  },
+  {
+   "uid": "CRB-20181025-T507-x1687y396-5fef6cac",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2018,
+   "transect": 5,
+   "frame": 7,
+   "source_image": "TCRMP20181025_clip_CRB_T507.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-07 15:54:28",
+   "crop_w": 165,
+   "crop_h": 146,
+   "crop": "items/CRB-20181025-T507-x1687y396-5fef6cac/crop.jpg",
+   "mask": "items/CRB-20181025-T507-x1687y396-5fef6cac/mask.png",
+   "full": "items/CRB-20181025-T507-x1687y396-5fef6cac/full.jpg"
+  },
+  {
+   "uid": "CRB-20181025-T507-x1756y330-19074150",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2018,
+   "transect": 5,
+   "frame": 7,
+   "source_image": "TCRMP20181025_clip_CRB_T507.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-07 15:54:28",
+   "crop_w": 179,
+   "crop_h": 141,
+   "crop": "items/CRB-20181025-T507-x1756y330-19074150/crop.jpg",
+   "mask": "items/CRB-20181025-T507-x1756y330-19074150/mask.png",
+   "full": "items/CRB-20181025-T507-x1756y330-19074150/full.jpg"
+  },
+  {
+   "uid": "CRB-20181025-T507-x244y881-eb97fab2",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2018,
+   "transect": 5,
+   "frame": 7,
+   "source_image": "TCRMP20181025_clip_CRB_T507.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-07 15:54:28",
+   "crop_w": 211,
+   "crop_h": 224,
+   "crop": "items/CRB-20181025-T507-x244y881-eb97fab2/crop.jpg",
+   "mask": "items/CRB-20181025-T507-x244y881-eb97fab2/mask.png",
+   "full": "items/CRB-20181025-T507-x244y881-eb97fab2/full.jpg"
+  },
+  {
+   "uid": "CRB-20181025-T507-x1205y1042-4d820a23",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2018,
+   "transect": 5,
+   "frame": 7,
+   "source_image": "TCRMP20181025_clip_CRB_T507.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-07 15:54:29",
+   "crop_w": 214,
+   "crop_h": 130,
+   "crop": "items/CRB-20181025-T507-x1205y1042-4d820a23/crop.jpg",
+   "mask": "items/CRB-20181025-T507-x1205y1042-4d820a23/mask.png",
+   "full": "items/CRB-20181025-T507-x1205y1042-4d820a23/full.jpg"
   }
  ],
  "reviewer_names": [
