@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-08T16:03:55-04:00",
+ "generated_at": "2026-07-08T18:26:39-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 240,
+ "count": 241,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -5841,6 +5841,29 @@
    "crop": "items/CRB-20220908-T514-x781y942-bfe3eaa8/crop.jpg",
    "mask": "items/CRB-20220908-T514-x781y942-bfe3eaa8/mask.png",
    "full": "items/CRB-20220908-T514-x781y942-bfe3eaa8/full.jpg"
+  },
+  {
+   "uid": "MGN-20231012-T412-x1000y279-c2a17ac0",
+   "site": "MGN",
+   "site_full": "Magens Bay",
+   "year": 2023,
+   "transect": 4,
+   "frame": 12,
+   "source_image": "TCRMP20231012_clip_MGN_T412.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-08 18:26:39",
+   "crop_w": 225,
+   "crop_h": 265,
+   "crop": "items/MGN-20231012-T412-x1000y279-c2a17ac0/crop.jpg",
+   "mask": "items/MGN-20231012-T412-x1000y279-c2a17ac0/mask.png",
+   "full": "items/MGN-20231012-T412-x1000y279-c2a17ac0/full.jpg"
   }
  ],
  "reviewer_names": [
