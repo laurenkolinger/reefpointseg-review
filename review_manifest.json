@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-08T18:51:14-04:00",
+ "generated_at": "2026-07-08T19:19:24-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 253,
+ "count": 255,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -6140,6 +6140,52 @@
    "crop": "items/BPT-20241011-T104-x168y1063-050c61dc/crop.jpg",
    "mask": "items/BPT-20241011-T104-x168y1063-050c61dc/mask.png",
    "full": "items/BPT-20241011-T104-x168y1063-050c61dc/full.jpg"
+  },
+  {
+   "uid": "CRB-20250508-T103-x1598y327-1eecfd3f",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2025,
+   "transect": 1,
+   "frame": 3,
+   "source_image": "TCRMP20250508_clip_CRB_T103.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-08 19:19:24",
+   "crop_w": 212,
+   "crop_h": 202,
+   "crop": "items/CRB-20250508-T103-x1598y327-1eecfd3f/crop.jpg",
+   "mask": "items/CRB-20250508-T103-x1598y327-1eecfd3f/mask.png",
+   "full": "items/CRB-20250508-T103-x1598y327-1eecfd3f/full.jpg"
+  },
+  {
+   "uid": "SRW-20251119-T206-x1444y640-068ec2d1",
+   "site": "SRW",
+   "site_full": "Salt River West",
+   "year": 2025,
+   "transect": 2,
+   "frame": 6,
+   "source_image": "TCRMP20251119_clip_SRW_T206.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-08 19:19:24",
+   "crop_w": 180,
+   "crop_h": 238,
+   "crop": "items/SRW-20251119-T206-x1444y640-068ec2d1/crop.jpg",
+   "mask": "items/SRW-20251119-T206-x1444y640-068ec2d1/mask.png",
+   "full": "items/SRW-20251119-T206-x1444y640-068ec2d1/full.jpg"
   }
  ],
  "reviewer_names": [
