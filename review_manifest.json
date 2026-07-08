@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-08T18:26:39-04:00",
+ "generated_at": "2026-07-08T18:34:45-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 241,
+ "count": 244,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -5864,6 +5864,75 @@
    "crop": "items/MGN-20231012-T412-x1000y279-c2a17ac0/crop.jpg",
    "mask": "items/MGN-20231012-T412-x1000y279-c2a17ac0/mask.png",
    "full": "items/MGN-20231012-T412-x1000y279-c2a17ac0/full.jpg"
+  },
+  {
+   "uid": "CRB-20231013-T103-x1571y627-9350552c",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2023,
+   "transect": 1,
+   "frame": 3,
+   "source_image": "TCRMP20231013_clip_CRB_T103.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-08 18:34:45",
+   "crop_w": 157,
+   "crop_h": 186,
+   "crop": "items/CRB-20231013-T103-x1571y627-9350552c/crop.jpg",
+   "mask": "items/CRB-20231013-T103-x1571y627-9350552c/mask.png",
+   "full": "items/CRB-20231013-T103-x1571y627-9350552c/full.jpg"
+  },
+  {
+   "uid": "CRB-20231013-T108-x288y925-227f9340",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2023,
+   "transect": 1,
+   "frame": 8,
+   "source_image": "TCRMP20231013_clip_CRB_T108.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-08 18:34:45",
+   "crop_w": 132,
+   "crop_h": 148,
+   "crop": "items/CRB-20231013-T108-x288y925-227f9340/crop.jpg",
+   "mask": "items/CRB-20231013-T108-x288y925-227f9340/mask.png",
+   "full": "items/CRB-20231013-T108-x288y925-227f9340/full.jpg"
+  },
+  {
+   "uid": "CRB-20231013-T201-x1680y36-18500917",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2023,
+   "transect": 2,
+   "frame": 1,
+   "source_image": "TCRMP20231013_clip_CRB_T201.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-08 18:34:45",
+   "crop_w": 177,
+   "crop_h": 111,
+   "crop": "items/CRB-20231013-T201-x1680y36-18500917/crop.jpg",
+   "mask": "items/CRB-20231013-T201-x1680y36-18500917/mask.png",
+   "full": "items/CRB-20231013-T201-x1680y36-18500917/full.jpg"
   }
  ],
  "reviewer_names": [
