@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-08T14:02:17-04:00",
+ "generated_at": "2026-07-08T14:11:38-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 218,
+ "count": 221,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -5335,6 +5335,75 @@
    "crop": "items/MGN-20191108-T609-x161y413-a310dfa3/crop.jpg",
    "mask": "items/MGN-20191108-T609-x161y413-a310dfa3/mask.png",
    "full": "items/MGN-20191108-T609-x161y413-a310dfa3/full.jpg"
+  },
+  {
+   "uid": "CRB-20200224-T603-x31y587-d9c4844c",
+   "site": "CRB",
+   "site_full": "Coral Bay",
+   "year": 2020,
+   "transect": 6,
+   "frame": 3,
+   "source_image": "TCRMP20200224_clip_CRB_T603.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-08 14:11:38",
+   "crop_w": 192,
+   "crop_h": 334,
+   "crop": "items/CRB-20200224-T603-x31y587-d9c4844c/crop.jpg",
+   "mask": "items/CRB-20200224-T603-x31y587-d9c4844c/mask.png",
+   "full": "items/CRB-20200224-T603-x31y587-d9c4844c/full.jpg"
+  },
+  {
+   "uid": "CKR-20200226-T311-x679y143-e23b610e",
+   "site": "CKR",
+   "site_full": "Coculus Rock",
+   "year": 2020,
+   "transect": 3,
+   "frame": 11,
+   "source_image": "TCRMP20200226_clip_CKR_T311.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-08 14:11:38",
+   "crop_w": 201,
+   "crop_h": 186,
+   "crop": "items/CKR-20200226-T311-x679y143-e23b610e/crop.jpg",
+   "mask": "items/CKR-20200226-T311-x679y143-e23b610e/mask.png",
+   "full": "items/CKR-20200226-T311-x679y143-e23b610e/full.jpg"
+  },
+  {
+   "uid": "CKR-20200226-T410-x45y869-16640382",
+   "site": "CKR",
+   "site_full": "Coculus Rock",
+   "year": 2020,
+   "transect": 4,
+   "frame": 10,
+   "source_image": "TCRMP20200226_clip_CKR_T410.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-08 14:11:38",
+   "crop_w": 118,
+   "crop_h": 182,
+   "crop": "items/CKR-20200226-T410-x45y869-16640382/crop.jpg",
+   "mask": "items/CKR-20200226-T410-x45y869-16640382/mask.png",
+   "full": "items/CKR-20200226-T410-x45y869-16640382/full.jpg"
   }
  ],
  "reviewer_names": [
