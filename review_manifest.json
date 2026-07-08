@@ -1,9 +1,9 @@
 {
- "generated_at": "2026-07-08T13:21:57-04:00",
+ "generated_at": "2026-07-08T14:02:17-04:00",
  "contacts": [
   "lauren.olinger@uvi.edu"
  ],
- "count": 214,
+ "count": 218,
  "items": [
   {
    "uid": "BWR-20140926-T119-x1636y358-de11a7d7",
@@ -5243,6 +5243,98 @@
    "crop": "items/SHR-20181128-T509-x1415y183-383095fd/crop.jpg",
    "mask": "items/SHR-20181128-T509-x1415y183-383095fd/mask.png",
    "full": "items/SHR-20181128-T509-x1415y183-383095fd/full.jpg"
+  },
+  {
+   "uid": "MGN-20191108-T503-x1063y639-a7087191",
+   "site": "MGN",
+   "site_full": "Magens Bay",
+   "year": 2019,
+   "transect": 5,
+   "frame": 3,
+   "source_image": "TCRMP20191108_clip_MGN_T503.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-08 14:02:17",
+   "crop_w": 325,
+   "crop_h": 249,
+   "crop": "items/MGN-20191108-T503-x1063y639-a7087191/crop.jpg",
+   "mask": "items/MGN-20191108-T503-x1063y639-a7087191/mask.png",
+   "full": "items/MGN-20191108-T503-x1063y639-a7087191/full.jpg"
+  },
+  {
+   "uid": "MGN-20191108-T503-x1323y737-7c0a05b7",
+   "site": "MGN",
+   "site_full": "Magens Bay",
+   "year": 2019,
+   "transect": 5,
+   "frame": 3,
+   "source_image": "TCRMP20191108_clip_MGN_T503.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-08 14:02:17",
+   "crop_w": 248,
+   "crop_h": 253,
+   "crop": "items/MGN-20191108-T503-x1323y737-7c0a05b7/crop.jpg",
+   "mask": "items/MGN-20191108-T503-x1323y737-7c0a05b7/mask.png",
+   "full": "items/MGN-20191108-T503-x1323y737-7c0a05b7/full.jpg"
+  },
+  {
+   "uid": "MGN-20191108-T503-x1383y589-209909db",
+   "site": "MGN",
+   "site_full": "Magens Bay",
+   "year": 2019,
+   "transect": 5,
+   "frame": 3,
+   "source_image": "TCRMP20191108_clip_MGN_T503.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-08 14:02:17",
+   "crop_w": 177,
+   "crop_h": 137,
+   "crop": "items/MGN-20191108-T503-x1383y589-209909db/crop.jpg",
+   "mask": "items/MGN-20191108-T503-x1383y589-209909db/mask.png",
+   "full": "items/MGN-20191108-T503-x1383y589-209909db/full.jpg"
+  },
+  {
+   "uid": "MGN-20191108-T609-x161y413-a310dfa3",
+   "site": "MGN",
+   "site_full": "Magens Bay",
+   "year": 2019,
+   "transect": 6,
+   "frame": 9,
+   "source_image": "TCRMP20191108_clip_MGN_T609.jpeg",
+   "project_id": "26-07-06_AT_2nd_test_6July2026",
+   "project_name": "AT_2nd_test_6July2026",
+   "featured_codes": [
+    "SS"
+   ],
+   "candidate_codes": [],
+   "reviews": [],
+   "accepted": null,
+   "added_at": "2026-07-08 14:02:17",
+   "crop_w": 171,
+   "crop_h": 150,
+   "crop": "items/MGN-20191108-T609-x161y413-a310dfa3/crop.jpg",
+   "mask": "items/MGN-20191108-T609-x161y413-a310dfa3/mask.png",
+   "full": "items/MGN-20191108-T609-x161y413-a310dfa3/full.jpg"
   }
  ],
  "reviewer_names": [
