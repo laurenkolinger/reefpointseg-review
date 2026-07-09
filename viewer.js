@@ -1,11 +1,12 @@
-/* TCRMP Coral expert-review viewer — static, no backend.
+/* TCRMP Coral expert-review viewer - static, no backend.
    Reads review_manifest.json + codes.json (same dir), renders one card per
    flagged mask, persists answers in localStorage, exports a CSV whose rows
    carry the reviewer's name (CONTRACTS §4,§7,§8 + C1-C5).
 
    This file is BOTH the browser viewer AND a node-requireable logic module:
    the pure helpers (CSV row builder, site-name map, project/site filter
-   predicate, bulk-apply selection) are exported via module.exports when loaded
+   predicate, bulk-apply selection, grouped render order via sortItems /
+   groupByProject) are exported via module.exports when loaded
    under node (no `document`); the DOM bootstrap runs only in a browser. Mirror
    of the placePoints pp_core.js pattern so the logic is unit-testable with
    `node tests/test_viewer_core.js` and the page still loads via one <script>. */
@@ -13,7 +14,7 @@
   "use strict";
 
   // ── PURE LOGIC (browser + node) ───────────────────────────────────
-  // No DOM, no localStorage — exported for unit tests.
+  // No DOM, no localStorage - exported for unit tests.
 
   var CSV_HEADER = ["uid", "code", "confidence", "reviewer", "project_id"];
   var CSV_HUMAN = ["project_name", "site", "frame"];   // optional, ignored on import
@@ -121,6 +122,50 @@
     return out;
   }
 
+  // Render-order sort: project label asc (items with no project fields LAST),
+  // then site code, then frame (missing frames last), then uid. Non-mutating.
+  function frameOrd(item) {
+    var f = item && item.frame;
+    if (f == null || f === "") return Infinity;
+    var n = Number(f);
+    return isNaN(n) ? Infinity : n;
+  }
+  function sortItems(items) {
+    return (items || []).slice().sort(function (a, b) {
+      var ka = projectKey(a), kb = projectKey(b);
+      if ((ka === "") !== (kb === "")) return ka === "" ? 1 : -1;
+      var la = (projectLabel(a) || ka).toLowerCase(), lb = (projectLabel(b) || kb).toLowerCase();
+      if (la !== lb) return la < lb ? -1 : 1;
+      if (ka !== kb) return ka < kb ? -1 : 1;   // duplicate labels split by key
+      var sa = String((a && (a.site_code || a.site)) || "");
+      var sb = String((b && (b.site_code || b.site)) || "");
+      if (sa !== sb) return sa < sb ? -1 : 1;
+      var fa = frameOrd(a), fb = frameOrd(b);
+      if (fa !== fb) return fa < fb ? -1 : 1;
+      var ua = String((a && a.uid) || ""), ub = String((b && b.uid) || "");
+      return ua < ub ? -1 : ua > ub ? 1 : 0;
+    });
+  }
+
+  // Grouped render order: sortItems, then bucket by project key. Items with no
+  // project fields collapse into one trailing "Unknown project" group. Each
+  // group: {key, label, items}.
+  var UNKNOWN_PROJECT = "Unknown project";
+  function groupByProject(items) {
+    var byKey = {}, out = [];
+    sortItems(items).forEach(function (it) {
+      var key = projectKey(it);
+      var g = byKey[key];
+      if (!g) {
+        g = { key: key, label: key === "" ? UNKNOWN_PROJECT : (projectLabel(it) || key), items: [] };
+        byKey[key] = g;
+        out.push(g);
+      }
+      g.items.push(it);
+    });
+    return out;
+  }
+
   // One CSV cell, RFC-4180 quoting.
   function csvCell(v) {
     v = String(v == null ? "" : v);
@@ -140,7 +185,9 @@
       var a = answers[it.uid];
       if (!isAnswered(a)) return;
       if (!matchesFilter(it, filter)) return;
-      var row = [it.uid, a.code, a.conf || "", reviewer || "", it.project_id || ""];
+      // confidence column retired: always blank, header unchanged for the
+      // importer; legacy stored conf values are ignored
+      var row = [it.uid, a.code, "", reviewer || "", it.project_id || ""];
       if (human) row = row.concat([it.project_name || "", it.site || "", it.frame == null ? "" : it.frame]);
       rows.push(row);
     });
@@ -191,8 +238,10 @@
 
   var CORE = {
     CSV_HEADER: CSV_HEADER, CSV_HUMAN: CSV_HUMAN, LAUREN: LAUREN,
+    UNKNOWN_PROJECT: UNKNOWN_PROJECT,
     siteName: siteName, projectLabel: projectLabel, projectKey: projectKey,
     distinctProjects: distinctProjects, distinctSites: distinctSites,
+    sortItems: sortItems, groupByProject: groupByProject,
     matchesFilter: matchesFilter, isAnswered: isAnswered, isUnanswered: isUnanswered,
     bulkApplyTargets: bulkApplyTargets, pendingByProject: pendingByProject,
     csvCell: csvCell, buildCsvRows: buildCsvRows, rowsToCsv: rowsToCsv,
@@ -208,7 +257,7 @@
   if (typeof document === "undefined") return;   // non-browser host, no boot
 
   // ── BROWSER VIEWER ────────────────────────────────────────────────
-  var LS_ANS = "tcrmp_review_answers_v1";   // {uid:{code,conf,skipped,answered}}
+  var LS_ANS = "tcrmp_review_answers_v1";   // {uid:{code,skipped,answered}}; legacy conf values tolerated + ignored
   var LS_NAME = "tcrmp_reviewer_name_v1";    // C1: persisted reviewer identity
   var FILL = "#22d3ee";                      // mask highlight (matches the baked outline)
   var DEFAULT_OPACITY = 0.45;
@@ -231,8 +280,7 @@
   }
 
   function defaultAnswer() {
-    return { code: CODES.idk.code, conf: CODES.default_confidence || "high",
-             skipped: false, answered: false };
+    return { code: CODES.idk.code, conf: "", skipped: false, answered: false };
   }
   function ansFor(uid) {
     if (!answers[uid]) answers[uid] = defaultAnswer();
@@ -248,7 +296,7 @@
     card.dataset.project = CORE.projectKey(item);
     card.dataset.site = String(item.site_code || item.site || "");
 
-    // context line — full site name (C4), project, transect/frame
+    // context line - full site name (C4), project, transect/frame
     var ctx = el("div", "ctx");
     var site = el("span", "site", CORE.siteName(item, CODES.sites) + (item.year ? "  ·  " + item.year : ""));
     var meta = el("span", null,
@@ -272,16 +320,14 @@
     });
     if (tentative.length) {
       var tbox = el("div", "tentative");
-      tbox.appendChild(el("span", "tlabel", "Tentative IDs (other reviewers — not yet accepted)"));
+      tbox.appendChild(el("span", "tlabel", "Tentative IDs (other reviewers, not yet accepted)"));
       var tlist = el("div", "tlist");
       tentative.forEach(function (r) {
         var chip = el("span", "tchip");
         chip.appendChild(el("span", "tcode", r.code));
-        var who = (r.reviewer || "anon") + (r.confidence ? " · " + r.confidence : "");
-        chip.appendChild(el("span", "twho", who));
+        chip.appendChild(el("span", "twho", r.reviewer || "anon"));
         chip.title = "Tentative ID by " + (r.reviewer || "an anonymous reviewer") +
-          (r.confidence ? " (confidence: " + r.confidence + ")" : "") +
-          ". Not accepted — provide your own independent ID.";
+          ". Not accepted. Provide your own independent ID.";
         tlist.appendChild(chip);
       });
       tbox.appendChild(tlist);
@@ -296,6 +342,7 @@
     slider.title = "Mask fill opacity";
     tools.appendChild(slider);
     var fullBtn = el("button", null, "Show whole frame");
+    fullBtn.title = "Toggle between the close-up and the whole frame.";
     tools.appendChild(fullBtn);
     card.appendChild(tools);
 
@@ -401,42 +448,33 @@
 
     // nested "something else" picker
     var elseBox = el("div", "elsebox");
-    var grpSel = el("select"); grpSel.title = "Group";
-    grpSel.appendChild(new Option("— group —", ""));
+    var grpSel = el("select"); grpSel.title = "Group (coral, algae, sponge, and more).";
+    grpSel.appendChild(new Option("- group -", ""));
     CODES.groups.forEach(function (g) { grpSel.appendChild(new Option(g.group, g.group)); });
-    var codeSel = el("select"); codeSel.title = "Code"; codeSel.disabled = true;
-    codeSel.appendChild(new Option("— code —", ""));
+    var codeSel = el("select"); codeSel.title = "Code within the chosen group."; codeSel.disabled = true;
+    codeSel.appendChild(new Option("- code -", ""));
     var chosen = el("span", "chosen", "");
     elseBox.appendChild(grpSel); elseBox.appendChild(codeSel); elseBox.appendChild(chosen);
     form.appendChild(elseBox);
 
     elseOpt.addEventListener("click", function () { elseBox.classList.add("show"); });
     grpSel.addEventListener("change", function () {
-      codeSel.innerHTML = ""; codeSel.appendChild(new Option("— code —", ""));
+      codeSel.innerHTML = ""; codeSel.appendChild(new Option("- code -", ""));
       var g = CODES.groups.filter(function (x) { return x.group === grpSel.value; })[0];
       if (g) { g.codes.forEach(function (c) {
-        var info = BYCODE[c] || {}; codeSel.appendChild(new Option(c + " — " + (info.name || ""), c));
+        var info = BYCODE[c] || {}; codeSel.appendChild(new Option(c + " - " + (info.name || ""), c));
       }); }
       codeSel.disabled = !g;
     });
     codeSel.addEventListener("change", function () {
       if (codeSel.value) { setCode(codeSel.value, true);
-        chosen.textContent = "✓ " + codeSel.value + " — " + ((BYCODE[codeSel.value] || {}).name || ""); }
+        chosen.textContent = "✓ " + codeSel.value + " - " + ((BYCODE[codeSel.value] || {}).name || ""); }
     });
 
-    // confidence + skip
+    // skip (confidence UI removed; CSV keeps a blank confidence column)
     var row = el("div", "row");
-    var conf = el("div", "conf");
-    var hi = el("button", "high", "High");
-    hi.title = CODES.confidence.high.definition;
-    var lo = el("button", "low", "Low");
-    lo.title = CODES.confidence.low.definition;
-    hi.addEventListener("click", function () { a.conf = "high"; a.answered = true; syncUI(); persist(); });
-    lo.addEventListener("click", function () { a.conf = "low"; a.answered = true; syncUI(); persist(); });
-    conf.appendChild(el("span", "lbl", "Confidence")); conf.appendChild(hi); conf.appendChild(lo);
-    row.appendChild(conf);
     var skip = el("button", "skipbtn", "Skip");
-    skip.title = "Not sure — exclude this mask from your results.";
+    skip.title = "Not sure. Exclude this mask from your results.";
     skip.addEventListener("click", function () {
       a.skipped = !a.skipped; a.answered = false; syncUI(); persist();
     });
@@ -455,8 +493,6 @@
           !pickedInList && a.code !== CODES.idk.code;
         o.classList.toggle("sel", selByCode || selByElse);
       });
-      hi.classList.toggle("sel", a.conf === "high");
-      lo.classList.toggle("sel", a.conf === "low");
       skip.classList.toggle("sel", !!a.skipped);
       card.classList.toggle("skip", !!a.skipped);
       var done = a.answered && !a.skipped;
@@ -469,10 +505,41 @@
     return card;
   }
 
+  // ── project group headers (grouped card render) ──────────────────
+  function buildGroupHeader(group) {
+    var head = el("div", "grouphead");
+    head.dataset.project = group.key;
+    head.title = "Project group. The count shows still-unanswered cards in this project.";
+    head.appendChild(el("span", "gname", group.label));
+    var pend = el("span", "gpending");
+    head._pending = pend;
+    head.appendChild(pend);
+    return head;
+  }
+  function refreshGroupPending() {
+    if (!MANIFEST) return;
+    var host = document.getElementById("cards");
+    if (!host || !host.querySelectorAll) return;
+    var pending = CORE.pendingByProject(MANIFEST.items, answers);
+    Array.prototype.forEach.call(host.querySelectorAll(".grouphead"), function (head) {
+      if (head._pending)
+        head._pending.textContent = (pending[head.dataset.project] || 0) + " pending";
+    });
+  }
+  // Sticky group headers sit below the sticky topbar; measure its height into
+  // a CSS var so the offset tracks header wrapping at narrow widths.
+  function syncTopbarOffset() {
+    if (typeof document.querySelector !== "function") return;
+    var tb = document.querySelector(".topbar");
+    var rootEl = document.documentElement;
+    if (!tb || !rootEl || !rootEl.style || typeof rootEl.style.setProperty !== "function") return;
+    rootEl.style.setProperty("--topbar-h", (tb.offsetHeight || 0) + "px");
+  }
+
   // ── filters + bulk apply (Phase 4 + C4) ───────────────────────────
   function applyFilter() {
     var host = document.getElementById("cards");
-    var shown = 0;
+    var shown = 0, shownByProject = {};
     Array.prototype.forEach.call(host.querySelectorAll(".card"), function (card) {
       // dataset.project / dataset.site hold the resolved filter keys per card
       // (set in buildCard from CORE.projectKey + site_code); compare directly so
@@ -480,7 +547,17 @@
       var ok = (!FILTER.project || card.dataset.project === FILTER.project) &&
                (!FILTER.site || card.dataset.site === String(FILTER.site));
       card.style.display = ok ? "" : "none";
-      if (ok) shown++;
+      if (ok) {
+        shown++;
+        shownByProject[card.dataset.project] = (shownByProject[card.dataset.project] || 0) + 1;
+      }
+    });
+    // group headers hide with a non-matching project filter, and when the site
+    // filter leaves the group with no visible cards
+    Array.prototype.forEach.call(host.querySelectorAll(".grouphead"), function (head) {
+      var ok = (!FILTER.project || head.dataset.project === FILTER.project) &&
+               (shownByProject[head.dataset.project] || 0) > 0;
+      head.style.display = ok ? "" : "none";
     });
     var info = document.getElementById("filterInfo");
     if (info) info.textContent = shown + " of " + MANIFEST.items.length + " shown";
@@ -554,16 +631,16 @@
     siteWrap.appendChild(siteSel);
     bar.appendChild(siteWrap);
 
-    // bulk apply (C4) — code dropdown + apply button
+    // bulk apply (C4) - code dropdown + apply button
     var bulkWrap = el("label", "fctl bulk");
     bulkWrap.appendChild(el("span", "fcap", "Bulk-apply to view"));
     var bulkSel = el("select"); bulkSel.id = "bulkCode";
     bulkSel.title = "Assign one code to every still-unanswered card in the current view " +
       "(e.g. one species ubiquitous at a site). Answered/skipped cards are untouched.";
-    bulkSel.appendChild(new Option("— pick a code —", ""));
+    bulkSel.appendChild(new Option("- pick a code -", ""));
     var addOpt = function (code) {
       var info = BYCODE[code] || {};
-      bulkSel.appendChild(new Option(code + (info.name ? " — " + info.name : ""), code));
+      bulkSel.appendChild(new Option(code + (info.name ? " - " + info.name : ""), code));
     };
     var featured = MANIFEST.featured_codes || [];
     (CODES.candidate_codes || []).concat(featured).forEach(function (c) {
@@ -591,7 +668,7 @@
     });
     return { total: total, answered: answered, skipped: skipped };
   }
-  // The manifest items already carry site/site_code/project — filterItem is a
+  // The manifest items already carry site/site_code/project - filterItem is a
   // light shim keeping matchesFilter pure-input shaped.
   function filterItem(it) {
     return { project_id: it.project_id, project_name: it.project_name,
@@ -605,6 +682,7 @@
     document.getElementById("progress").textContent =
       t.answered + " identified · " + t.skipped + " skipped · " +
       (t.total - t.answered - t.skipped) + " remaining" + scope;
+    refreshGroupPending();
   }
 
   // ── CSV export ────────────────────────────────────────────────────
@@ -630,7 +708,7 @@
     document.getElementById("csvName").textContent = csvName;
     var list = document.getElementById("contactList"); list.innerHTML = "";
     var link = document.getElementById("mailtoLink");
-    var subject = encodeURIComponent("TCRMP reef expert IDs — " + n + " labels (" + REVIEWER + ")");
+    var subject = encodeURIComponent("TCRMP reef expert IDs - " + n + " labels (" + REVIEWER + ")");
     var body = encodeURIComponent(
       "Hi,\n\nAttached is my expert ID CSV (" + csvName + ") with " + n +
       " identifications from the TCRMP reef review.\nReviewer: " + REVIEWER +
@@ -641,7 +719,7 @@
       link.style.display = "";
     } else {
       list.appendChild(el("li", null,
-        "(no recipient was configured — please send the CSV to whoever asked you to review)"));
+        "(no recipient was configured, please send the CSV to whoever asked you to review)"));
       link.style.display = "none";
     }
     document.getElementById("exportModal").hidden = false;
@@ -667,7 +745,7 @@
     var v = (input.value || "").trim();
     var errEl = document.getElementById("nameErr");
     if (!v) {
-      if (errEl) errEl.textContent = "Please enter your name to begin — it is recorded with every ID you submit.";
+      if (errEl) errEl.textContent = "Please enter your name to begin. It is recorded with every ID you submit.";
       try { input.focus(); } catch (e) {}
       return;
     }
@@ -694,7 +772,7 @@
     });
 
     // codes.json is required (the labeling form needs it). The manifest may be
-    // missing/404 (e.g. a freshly-deployed empty review repo) — treat that as
+    // missing/404 (e.g. a freshly-deployed empty review repo) - treat that as
     // "nothing to review" rather than a hard error.
     getJSON("codes.json").then(function (codesData) {
       CODES = codesData;
@@ -712,13 +790,20 @@
       host.innerHTML = "";
       if (!MANIFEST.items || !MANIFEST.items.length) {
         host.appendChild(el("div", "empty",
-          "Nothing to review right now — all masks have been identified. Thank you!"));
+          "Nothing to review right now. All masks have been identified. Thank you!"));
         refreshCounts();
         if (!REVIEWER) openNameGate();
         return;
       }
       buildControls();
-      MANIFEST.items.forEach(function (it) { host.appendChild(buildCard(it)); });
+      // grouped render: one sticky header per project, cards sorted within
+      CORE.groupByProject(MANIFEST.items).forEach(function (group) {
+        host.appendChild(buildGroupHeader(group));
+        group.items.forEach(function (it) { host.appendChild(buildCard(it)); });
+      });
+      syncTopbarOffset();
+      if (typeof root.addEventListener === "function")
+        root.addEventListener("resize", syncTopbarOffset);
       applyFilter();
       refreshCounts();
       if (!REVIEWER) openNameGate();   // C1: require a name before any labeling

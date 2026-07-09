@@ -1,4 +1,4 @@
-/* Expert-review viewer — professional VICARIUS theme.
+/* Expert-review viewer - professional VICARIUS theme.
    Palette + type pulled from vicarius_ui/static/theme.css (T-Mobile magenta
    accent, bubblegum highlights, dark surfaces, Syne/Inter/Space Mono), toned
    down for an external, document-style review page. */
@@ -32,7 +32,7 @@ code{font-family:var(--font-mono);font-size:.92em;color:var(--bubble)}
 
 .instructions{padding:16px 26px;background:var(--gray);border-bottom:1px solid var(--line)}
 .instructions summary{cursor:pointer;font-weight:600;color:var(--tmobile-hot);font-family:var(--font-display)}
-.instructions ol{margin:10px 0 2px 18px;color:var(--dim);font-size:13px}
+.instructions ul{margin:10px 0 2px 18px;color:var(--dim);font-size:13px}
 .instructions li{margin:4px 0}
 .instructions strong{color:var(--ink)}
 
@@ -81,13 +81,7 @@ code{font-family:var(--font-mono);font-size:.92em;color:var(--bubble)}
   border-radius:var(--radius);padding:7px 9px;max-width:100%;font-family:var(--font-body)}
 .chosen{font-size:12px;color:var(--ok);font-family:var(--font-mono)}
 
-.row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-.conf{display:flex;gap:6px;align-items:center}
-.conf .lbl{margin-right:2px}
-.conf button{background:var(--gray-2);border:1px solid var(--line);color:var(--ink);
-  border-radius:var(--radius);padding:6px 12px;cursor:pointer;font-size:12px;font-family:var(--font-body)}
-.conf button.sel{background:var(--ok);color:#03241a;border-color:var(--ok)}
-.conf button.low.sel{background:var(--warn);color:#2a1c04;border-color:var(--warn)}
+.row{display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap}
 .skipbtn{background:transparent;border:1px solid var(--line);color:var(--dim);
   border-radius:var(--radius);padding:6px 12px;cursor:pointer;font-size:12px}
 .skipbtn.sel{color:var(--warn);border-color:var(--warn)}
@@ -101,8 +95,6 @@ button.primary,a.primary{background:var(--tmobile);color:#fff;border:none;border
   font-family:var(--font-display);letter-spacing:.3px;transition:.12s}
 button.primary:hover,a.primary:hover{background:var(--tmobile-hot)}
 button{font-family:inherit}
-.tip{display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;border-radius:50%;
-  background:var(--line);color:var(--ink);font-size:10px;cursor:help;margin-left:4px;font-family:var(--font-mono)}
 
 .empty{padding:64px 26px;text-align:center;color:var(--dim)}
 
@@ -128,7 +120,6 @@ button{font-family:inherit}
 .alert .alert-emails{font-family:var(--font-mono);font-size:15px;font-weight:700;
   color:var(--bubble);background:rgba(255,255,255,.05);border:1px solid var(--tmobile);
   border-radius:var(--radius);padding:8px 12px;display:inline-block;word-break:break-all}
-.alert .alert-note{color:var(--dim);font-size:12.5px}
 .alert strong{color:#fff}
 
 /* ── reviewer identity pill (C1) ────────────────────────────────────── */
@@ -158,6 +149,18 @@ button{font-family:inherit}
 .filterbar .finfo{font-family:var(--font-mono);font-size:11px;color:var(--dim);margin-left:auto;
   align-self:center}
 
+/* ── project group headers (grouped card render) ────────────────────── */
+/* --topbar-h is set by viewer.js from the live topbar height so the sticky
+   offset tracks header wrapping at narrow widths */
+.grouphead{grid-column:1/-1;position:sticky;top:var(--topbar-h,84px);z-index:4;
+  display:flex;align-items:baseline;justify-content:space-between;gap:10px;
+  margin:6px 0 -8px;padding:10px 2px 8px;background:var(--dark);
+  border-bottom:1px solid var(--line)}
+.grouphead .gname{font-family:var(--font-display);font-weight:700;font-size:16px;
+  color:var(--ink);letter-spacing:.2px}
+.grouphead .gpending{font-family:var(--font-mono);font-size:11px;color:var(--dim);
+  text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
+
 /* ── project line + tentative IDs on each card (Phase 4 + C5) ───────── */
 .card .projline{display:flex;align-items:center;gap:8px;padding:6px 13px;
   border-bottom:1px solid var(--line-2);font-size:11px}
@@ -175,7 +178,7 @@ button{font-family:inherit}
 .card .tentative .tcode{font-family:var(--font-mono);font-weight:700;font-size:12px;color:var(--warn)}
 .card .tentative .twho{font-size:9px;color:var(--dim)}
 
-/* candidate quick-pick codes (C3) — bubblegum accent vs magenta featured */
+/* candidate quick-pick codes (C3) - bubblegum accent vs magenta featured */
 .opt.cand{border-color:var(--bubble);background:#1c1620}
 .opt.cand .code{color:var(--bubble)}
 .opt.cand.sel{background:var(--bubble);border-color:var(--bubble);color:#2a0617}
